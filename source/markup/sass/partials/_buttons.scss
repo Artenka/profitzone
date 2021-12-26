@@ -1,0 +1,26 @@
+.btn {
+    display: inline-block;
+    border-radius: 60px;
+    border: 3px solid #FF9900;
+    background: #FF9900;
+    font-weight: 800;
+    font-size: 13px;
+    line-height: 123%;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 21px 37px;
+    transition: 0.4s;
+    &:hover {
+        color: #fff;
+        transform: scale(1.03);
+    }
+
+    &.btn--2 {
+        padding: 25px 29px;
+    }
+
+    &.btn--bordered {
+        background: transparent;
+    }
+}

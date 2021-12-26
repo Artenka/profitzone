@@ -1,0 +1,215 @@
+.home-students-section {
+    padding: 84px 0 0;
+    position: relative;
+    &:before {
+        content: '';
+        width: 100%;
+        height: 768px;
+        background: #121D54;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .main-wrapper {
+        position: relative;
+        z-index: 2;
+    }
+}
+
+.home-students {
+    max-width: 1304px;
+    margin: 0 auto;
+
+    &__title {
+        margin-left: 125px;
+
+        .section-ghost-title {
+            width: auto;
+            text-align: left;
+            left: -97px;
+        }
+
+        .section-title {
+            text-align: left;
+        }
+    }
+}
+
+.home-students-slider-layout {
+    border-bottom: 1px solid #3F4776;
+    position: relative;
+}
+
+.home-students-slider-decor {
+    width: 531px;
+    height: 538px;
+    background: url(../img/home/students/decor.svg) no-repeat center / contain;
+    position: absolute;
+    bottom: -1px;
+    right: 27px;
+}
+
+.home-students-slider {
+    padding: 45px 0 50px 125px;
+
+    .slick-list {
+        overflow: visible;
+    }
+
+    .slick-arrow {
+        width: 59px;
+        height: 17px;
+        background: no-repeat center / contain;
+        font-size: 0;
+        position: absolute;
+        top: calc(100% + 34px);
+        cursor: pointer;
+        z-index: 5;
+
+        &.slick-prev {
+            display: none;
+        }
+
+        &.slick-next {
+            background-image: url(../img/home/students/arrow-right.svg);
+            left: 1116px;
+        }
+    }
+
+    .slick-dots {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: calc(100% + 32px);
+        left: 125px;
+        z-index: 5;
+
+        > li {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 140%;
+            color: rgba(255,255,255,0.3);
+            margin-right: 42px;
+            cursor: pointer;
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &.slick-active {
+                color: #fff;
+            }
+        }
+    }
+}
+
+.home-students-slide {
+
+    &.slick-current {
+
+        .home-students-info {
+            opacity: 1;
+            transition: 0.5s;
+        }
+    }
+}
+
+.home-students-info {
+    max-width: 455px;
+    position: relative;
+    opacity: 0;
+
+    &__about {
+        display: flex;
+        align-items: center;
+
+        &_photo {
+            width: 62px;
+            height: 62px;
+            border-radius: 50%;
+            margin-right: 23px;
+        }
+
+        &_text {
+            flex: 1;
+        }
+
+        &.home-students-info__about--right {
+
+            .home-students-info__about_photo {
+                margin-right: 0;
+                margin-left: 23px;
+            }
+
+            .home-students-info__about_text {
+                text-align: right;
+            }
+        }
+    }
+
+    &__name, &__position {
+        font-size: 15px;
+        line-height: 140%;
+    }
+    &__name {
+        font-weight: 700;
+    }
+    &__position {
+        font-weight: 500;
+        margin-top: 6px;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 140%;
+        margin-top: 45px;
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 140%;
+        margin-top: 15px;
+    }
+
+    &__next {
+        width: 300px;
+        position: absolute;
+        top: calc(100% + 60px);
+        left: 660px;
+    }
+}
+
+.home-students-video-slider {
+    padding: 120px 0 42px;
+
+    .slick-list {
+        overflow: visible;
+    }
+
+    .slick-track {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.home-students-video-slide {
+    width: 580px;
+    padding: 0 35px;
+
+    &.slick-current {
+        width: 900px;
+    }
+}
+
+.home-students-video {
+    cursor: pointer;
+
+    &__thumb {
+        width: 100%;
+        height: auto;
+        border-radius: 27px;
+        box-shadow: 0px 13.5065px 81.039px rgba(13, 33, 56, 0.31);
+    }
+}

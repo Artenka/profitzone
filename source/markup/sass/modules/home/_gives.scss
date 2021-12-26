@@ -1,0 +1,50 @@
+.home-gives-section {
+    background: #121D54;
+    padding: 90px 0 125px;
+}
+
+.home-gives {
+
+}
+
+.home-gives-main {
+    max-width: 1048px;
+    margin: 90px auto 0;
+}
+
+.home-gives-item {
+    width: 510px;
+    text-align: right;
+    margin-bottom: 130px;
+    position: relative;
+    &:before {
+        content: '';
+        background: no-repeat center / contain;
+        position: absolute;
+    }
+    &:last-child {
+        margin-bottom: 0;
+    }
+    &:nth-child(odd) {
+        text-align: left;
+        margin-left: auto;
+    }
+    &:nth-child(1) {
+        &:before {
+            width: 406px;
+            height: 267px;
+            background: url(../img/home/gives/item-1.svg);
+            top: -40px;
+            left: -556px;
+        }
+    }
+    &:nth-child(2) {
+        &:before {
+            width: 488px;
+            height: 336px;
+            background: url(../img/home/gives/item-2.svg);
+            top: -96px;
+            left: 631px;
+        }
+    }
+}

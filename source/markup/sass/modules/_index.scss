@@ -1,0 +1,300 @@
+html {
+    min-height: 100vh;
+}
+
+body {
+    background: #ffffff;
+    font-family: Montserrat, sans-serif;
+    color: #2D3851;
+    font-size: 15px;
+    line-height: 160%;
+    overflow-x: hidden;
+    @include mobile {
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
+
+.main-wrapper {
+    max-width: 1426px;
+    padding: 0 30px;
+    margin: 0 auto;
+    @include tablet {
+        max-width: 710px;
+    }
+    @include mobile {
+        max-width: 310px;
+    }
+}
+
+.main {
+
+}
+
+a {
+    transition: 0.4s;
+    &:hover {
+        color: #FF9900;
+    }
+}
+
+.br-lg {
+    display: block;
+    @include tablet {
+        display: none;
+    }
+    @include mobile {
+        display: none;
+    }
+}
+
+.br-lp {
+    display: none;
+    @include laptop {
+        display: block;
+    }
+    @include tablet {
+        display: none;
+    }
+    @include mobile {
+        display: none;
+    }
+}
+
+.br-lp-md {
+    display: none;
+    @include laptop {
+        display: block;
+    }
+    @include tablet {
+        display: block;
+    }
+    @include mobile {
+        display: none;
+    }
+}
+
+.br-lp-sm {
+    display: none;
+    @include laptop {
+        display: block;
+    }
+    @include tablet {
+        display: block;
+    }
+    @include mobile {
+        display: block;
+    }
+}
+
+.br-lg-md {
+    display: block;
+    @include tablet {
+        display: block;
+    }
+    @include mobile {
+        display: none;
+    }
+}
+
+.br-lg--sm {
+    display: block;
+    @include tablet {
+        display: none;
+    }
+    @include mobile {
+        display: block;
+    }
+}
+
+.br-md-sm {
+    display: none;
+    @include tablet {
+        display: block;
+    }
+    @include mobile {
+        display: block;
+    }
+}
+
+.br-md {
+    display: none;
+    @include tablet {
+        display: block;
+    }
+    @include mobile {
+        display: none;
+    }
+}
+
+.br-sm {
+    display: none;
+    @include tablet {
+        display: none;
+    }
+    @include mobile {
+        display: block;
+    }
+}
+
+.br-sm-text {
+    display: none;
+    @include tablet {
+        display: none;
+    }
+    @include mobile {
+        display: inline;
+    }
+}
+
+.inline-lg {
+    display: inline;
+    @include tablet {
+        display: none;
+    }
+    @include mobile {
+        display: none;
+    }
+}
+
+.inline-lp {
+    display: none;
+    @include laptop {
+        display: inline;
+    }
+    @include tablet {
+        display: none;
+    }
+    @include mobile {
+        display: none;
+    }
+}
+
+.inline-lp-md {
+    display: none;
+    @include laptop {
+        display: inline;
+    }
+    @include tablet {
+        display: inline;
+    }
+    @include mobile {
+        display: none;
+    }
+}
+
+.inline-lp-sm {
+    display: none;
+    @include laptop {
+        display: inline;
+    }
+    @include tablet {
+        display: inline;
+    }
+    @include mobile {
+        display: inline;
+    }
+}
+
+.inline-lg-md {
+    display: inline;
+    @include tablet {
+        display: inline;
+    }
+    @include mobile {
+        display: none;
+    }
+}
+
+.inline-md-sm {
+    display: none;
+    @include tablet {
+        display: inline;
+    }
+    @include mobile {
+        display: inline;
+    }
+}
+
+.inline-md {
+    display: none;
+    @include tablet {
+        display: inline;
+    }
+    @include mobile {
+        display: none;
+    }
+}
+
+.inline-sm {
+    display: none;
+    @include tablet {
+        display: none;
+    }
+    @include mobile {
+        display: inline;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.clear {
+    display: table;
+    clear: both;
+}
+
+p, h1, h2, h3, h4, h5, h6, img {
+    display: block;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button {
+    background: none;
+    border: none;
+    transition: 0.5s;
+}
+
+em {
+    font-style: italic;
+}
+
+b, strong {
+    font-weight: 700;
+}
+
+input, textarea, select, .input, .textarea, .select {
+    width: 100%;
+    display: block;
+    border: none;
+    color: #000000;
+    font-family: AvenirNextCyr, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: -0.22px;
+    padding: 22px 57px 25px;
+    outline: none;
+    transition: 0.5s;
+    @include mobile {
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: -0.15px;
+        padding: 22px 23px;
+    }
+}
+
+textarea {
+    resize: none;
+}
+
+label {
+    display: block;
+}

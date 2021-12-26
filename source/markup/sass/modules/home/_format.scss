@@ -1,0 +1,125 @@
+.home-format-section {
+    padding: 80px 0 0;
+}
+
+.home-format {
+    max-width: 1264px;
+    margin: 0 auto;
+}
+
+.home-format-main {
+    min-height: 432px;
+    margin-top: 50px;
+    position: relative;
+
+    &__decor {
+        width: 568px;
+        height: 316px;
+        background: url(../img/home/format/decor.svg) no-repeat center / contain;
+        position: absolute;
+        bottom: 0;
+        left: 372px;
+        z-index: 2;
+    }
+}
+
+.home-format-list {
+    position: relative;
+}
+
+.home-format-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #121D54;
+    border-radius: 20px;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 18px 22px 18px 30px;
+    @include desktop-only {
+        height: 89px;
+        position: absolute;
+    }
+
+    &__text {
+
+        b {
+            font-weight: 800;
+            color: #fff;
+        }
+    }
+
+    &.home-format-item--1, &.home-format-item--2, &.home-format-item--5 {
+        @include desktop-only {
+            text-align: center;
+        }
+    }
+    &.home-format-item--1 {
+        @include desktop-only {
+            width: 422px;
+            top: 0;
+            left: 0;
+        }
+    }
+    &.home-format-item--2 {
+        @include desktop-only {
+            width: 332px;
+            top: 0;
+            left: 513px;
+        }
+    }
+    &.home-format-item--3 {
+        @include desktop-only {
+            width: 281px;
+            top: 115px;
+            left: 0;
+        }
+    }
+    &.home-format-item--4 {
+        background: #F73E91;
+        @include desktop-only {
+            width: 328px;
+            text-align: right;
+            top: 0;
+            left: 936px;
+        }
+    }
+    &.home-format-item--5 {
+        @include desktop-only {
+            width: 283px;
+            top: 115px;
+            left: 981px;
+        }
+    }
+    &.home-format-item--6 {
+        @include desktop-only {
+            width: 422px;
+            height: 175px;
+            top: 230px;
+            left: 0;
+        }
+    }
+    &.home-format-item--7 {
+        @include desktop-only {
+            width: 368px;
+            height: 175px;
+            top: 230px;
+            left: 896px;
+        }
+    }
+}
+
+.home-format-disclaimer {
+    background: #FF9900;
+    border-radius: 20px;
+    text-align: center;
+    padding: 35px 236px 30px;
+
+    &__title {
+
+    }
+
+    &__text {
+        margin-top: 8px;
+    }
+}

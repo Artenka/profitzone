@@ -1,0 +1,136 @@
+.home-reviews-section {
+    padding: 175px 0 150px;
+    overflow-x: hidden;
+}
+
+.home-reviews {
+
+}
+
+.home-reviews-facts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.home-reviews-fact {
+    width: 400px;
+    border-radius: 12px;
+    background: #fff;
+    filter: drop-shadow(0px 4px 25px rgba(53, 81, 147, 0.2));
+    padding: 60px 32px 26px;
+    margin: 80px 16px 0;
+
+    &__number {
+        width: 90px;
+        height: 90px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: url(../img/home/reviews/number-romb.svg) no-repeat center / contain;
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 140%;
+        text-align: center;
+        color: #FFFFFF;
+        padding-bottom: 7px;
+        position: absolute;
+        top: -40px;
+        left: calc(50% - 45px);
+    }
+
+    &__text {
+        line-height: 140%;
+        text-align: center;
+    }
+
+    &__img {
+        max-width: 100%;
+        margin: 28px auto 0;
+    }
+}
+
+.home-reviews-slider {
+    width: 850px;
+    margin: 137px auto 0;
+    &:before, &:after {
+        content: '';
+        width: 310px;
+        height: 100%;
+        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+        position: absolute;
+        top: 0;
+        z-index: 2;
+    }
+    &:before {
+        left: calc(50% - 50vw);
+    }
+    &:after {
+        right: calc(50% - 50vw);
+        transform: scale(-1);
+    }
+
+    .slick-list {
+        overflow: visible;
+    }
+
+    .slick-track {
+        display: flex;
+        align-items: center;
+    }
+
+    .slick-arrow {
+        width: 290px;
+        height: 290px;
+        border-radius: 50%;
+        font-size: 0;
+        position: absolute;
+        top: calc(50% - 145px);
+        z-index: 3;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &.slick-prev {
+            background: url(../img/home/reviews/arrow-left.svg) no-repeat center right 25px, #121D54;
+            left: calc(50% - 50vw - 240px);
+            &:hover {
+                background: url(../img/home/reviews/arrow-left-hover.svg) no-repeat center right -25px, #FF9900;
+            }
+        }
+        &.slick-next {
+            background: url(../img/home/reviews/arrow-right.svg) no-repeat center left 25px, #121D54;
+            right: calc(50% - 50vw - 240px);
+            &:hover {
+                background: url(../img/home/reviews/arrow-right-hover.svg) no-repeat center left -25px, #FF9900;
+            }
+        }
+    }
+}
+
+.home-reviews-slide {
+    width: 250px;
+    padding: 0 25px;
+
+    &.slick-current {
+        width: 350px;
+
+        .home-reviews-slide-content {
+
+            &__img {
+                filter: drop-shadow(0px 17.3768px 104.261px rgba(37, 128, 236, 0.31));
+                border-radius: 35px;
+                transform: scale(1.5);
+            }
+        }
+    }
+}
+
+.home-reviews-slide-content {
+
+    &__img {
+        width: 100%;
+        height: auto;
+        transition: 0.3s;
+    }
+}
