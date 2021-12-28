@@ -35,6 +35,16 @@ $(function () {
         },
         preferredCountries: ['ua', 'ru', 'by', 'kz']
     });
+
+    // header submenu toggle
+    $('.main-header-burger').click(function () {
+        $(this).toggleClass('main-header-burger--active burger--active');
+    });
+
+    // lang switcher
+    $('.lang-switcher').click(function () {
+        $(this).toggleClass('lang-switcher--active');
+    });
 });
 
 function showPopup(popupId) {

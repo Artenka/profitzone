@@ -202,6 +202,7 @@
 
     &__tab {
         max-height: 370px;
+        display: none;
         padding-left: 42px;
         overflow-y: auto;
         direction: rtl;
@@ -236,6 +237,10 @@
             &:first-child {
                 margin-top: 0;
             }
+        }
+
+        &.home-program-item__tab--active {
+            display: block;
         }
     }
 

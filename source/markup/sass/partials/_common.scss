@@ -178,7 +178,7 @@
     align-items: flex-end;
     cursor: pointer;
     position: relative;
-    &:hover {
+    &:hover, &.burger--active {
 
         .burger-line {
             &:nth-child(1), &:nth-child(3) {
@@ -224,6 +224,7 @@
         display: none;
         position: absolute;
         top: 100%;
+        z-index: 5;
 
         &_item {
             margin-bottom: 6px;
@@ -231,6 +232,13 @@
             &:last-child {
                 margin-bottom: 0;
             }
+        }
+    }
+
+    &.lang-switcher--active {
+
+        .lang-switcher__menu {
+            display: block;
         }
     }
 }

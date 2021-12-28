@@ -1,5 +1,4 @@
-# markup-base-project
-Base project for creating HTML/CSS markup using Jade and SCSS
+# Profitzone
 
 ## Before you start
 Make sure you use 4-space indentation for `*.json` files and tab indentation for all other file types.

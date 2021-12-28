@@ -1,4 +1,7 @@
 $(function() {
+    // program content tabs
+    changeTabs('home-program-item__tabs-btn','home-program-item__tab');
+
     // reviews slider
     $('.home-reviews-slider').slick({
         infinite: true,
@@ -34,5 +37,10 @@ $(function() {
         variableWidth: true,
         focusOnSelect: true,
         asNavFor: '.home-students-slider',
+    });
+
+    // faq toggle
+    $('.home-faq-item').click(function (){
+        $(this).toggleClass('home-faq-item--active');
     });
 });
