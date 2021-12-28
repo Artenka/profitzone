@@ -1,5 +1,8 @@
 .home-foreword-section {
     padding: 90px 0 0;
+    @include tablet {
+        padding-top: 75px;
+    }
 }
 
 .home-foreword {
@@ -8,6 +11,10 @@
         max-width: 860px;
         text-align: center;
         margin: 70px auto 0;
+        @include tablet {
+            max-width: 663px;
+            margin-top: 82px;
+        }
     }
 }
 
@@ -15,7 +22,12 @@
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    margin-top: 100px;
+    margin: 100px auto 0;
+    @include tablet {
+        width: 665px;
+        flex-wrap: wrap;
+        margin-top: 22px;
+    }
 }
 
 .home-foreword-item {
@@ -25,6 +37,9 @@
     align-items: center;
     margin-right: 32px;
     position: relative;
+    @include tablet {
+        margin: 52px 80px 0 0;
+    }
     &:after {
         content: '';
         width: 171px;
@@ -33,13 +48,42 @@
         position: absolute;
         top: -20px;
         right: -103px;
+        @include tablet {
+            width: 182px;
+            height: 34px;
+            background-image: url(../img/home/foreword/arrow-curve-odd-2-tablet.svg);
+            top: 92px;
+            left: 246px;
+        }
+    }
+    &:first-child {
+        &:after {
+            @include tablet {
+                width: 171px;
+                height: 33px;
+                background-image: url(../img/home/foreword/arrow-curve-odd-1-tablet.svg);
+                top: -20px;
+                left: 251px;
+            }
+        }
     }
     &:nth-child(even) {
+        @include tablet {
+            margin-right: 0;
+        }
         &:after {
             content: '';
             background-image: url(../img/home/foreword/arrow-curve-bottom.svg);
             top: 88px;
             right: -101px;
+            @include tablet {
+                width: 149px;
+                height: 88px;
+                background-image: url(../img/home/foreword/arrow-curve-even-tablet.svg);
+                top: 152px;
+                right: auto;
+                left: -145px;
+            }
         }
     }
     &:last-child {
@@ -70,4 +114,10 @@
 
 .home-foreword-gift {
     margin-top: 70px;
+    @include tablet-mobile {
+        width: 100vw;
+        background: #4949B7;
+        position: relative;
+        left: calc(50% - 50vw);
+    }
 }

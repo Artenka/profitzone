@@ -2,9 +2,13 @@
     flex: 0 0 auto;
     background: #121D54;
     padding: 18px 0;
+    @include tablet {
+        padding: 25px 0 0;
+    }
 
     .main-wrapper {
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
     }
@@ -12,6 +16,24 @@
 
 .main-footer-col {
     flex: 1;
+
+    &.main-footer-col--1 {
+        @include tablet {
+            order: 1;
+        }
+    }
+    &.main-footer-col--2 {
+        @include tablet {
+            order: 3;
+            flex: initial;
+            width: 100%;
+        }
+    }
+    &.main-footer-col--3 {
+        @include tablet {
+            order: 2;
+        }
+    }
 }
 
 .main-footer-title {
@@ -25,6 +47,24 @@
 
 
 .main-footer-menu {
+    @include tablet {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        margin-top: 20px;
+        position: relative;
+    }
+    &:before {
+        @include tablet {
+            content: '';
+            width: 100vw;
+            height: 100%;
+            background: #0D153D;
+            position: absolute;
+            top: 0;
+            left: calc(50% - 50vw);
+        }
+    }
 
     &__item {
         display: block;
@@ -35,8 +75,18 @@
         color: #FFFFFF;
         text-align: center;
         margin-bottom: 26px;
+        position: relative;
+        z-index: 2;
+        @include tablet {
+            margin: 10px 36px 10px 0;
+        }
         &:last-child {
-            margin-bottom: 0;
+            @include desktop-only {
+                margin-bottom: 0;
+            }
+            @include tablet {
+                margin-right: 0;
+            }
         }
     }
 }

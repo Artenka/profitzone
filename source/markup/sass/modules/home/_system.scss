@@ -8,9 +8,18 @@
 
 .home-system-box {
     display: flex;
+    @include tablet-mobile {
+        width: 100vw;
+        flex-direction: column;
+        position: relative;
+        left: calc(50% - 50vw);
+    }
 
     &__title {
-        margin-bottom: 37px;
+        margin: 0 auto 37px;
+        @include tablet {
+            max-width: 710px;
+        }
     }
 
     &__left {
@@ -18,27 +27,73 @@
         border-radius: 20px 0 0 20px;
         background: url(../img/home/system/bg-left.svg) no-repeat top left / cover, #2E2362;
         padding: 79px 40px 59px 51px;
+        @include tablet-mobile {
+            width: 100%;
+            border-radius: 0;
+        }
+        @include tablet {
+            padding: 79px 10px 64px;
+        }
     }
     &__right {
         width: calc(50% - 56px);
         display: flex;
         flex-direction: column;
+        @include tablet-mobile {
+            width: 100%;
+        }
 
         &_top {
             flex: 1;
             border-radius: 0 20px 0 0;
             background: url(../img/home/system/bg-right-top.svg) no-repeat bottom right / cover, #4949B7;
             padding: 80px 51px 69px 68px;
+            @include tablet-mobile {
+                border-radius: 0;
+            }
+            @include tablet {
+                padding: 63px 10px 51px;
+            }
+
+            .home-system-box-blocks {
+
+                .home-system-box-block {
+                    @include tablet {
+                        margin-bottom: 24px;
+                    }
+                }
+            }
+
+            .home-system-box-block {
+
+                &__title {
+                    @include tablet {
+                        display: none;
+                    }
+                }
+            }
         }
         &_bottom {
             border-radius: 0 0 20px 0;
             background: #FF9900;
             padding: 51px 60px 64px;
+            @include tablet-mobile {
+                border-radius: 0;
+            }
+            @include tablet {
+                padding: 51px 10px 64px;
+            }
         }
     }
 }
 
 .home-system-box-blocks {
+    @include tablet-mobile {
+        margin: 0 auto;
+    }
+    @include tablet {
+        max-width: 710px;
+    }
 
     .home-system-box-block {
         margin-bottom: 56px;

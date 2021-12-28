@@ -1,5 +1,8 @@
 .home-details-section {
     padding: 210px 0;
+    @include tablet {
+        padding: 81px 0 202px;
+    }
 }
 
 .home-details {
@@ -12,19 +15,30 @@
     align-items: center;
     padding-left: 108px;
     margin: 0 auto;
+    @include tablet-mobile {
+        flex-direction: column;
+        padding-left: 0;
+    }
 }
 
 .home-details-content {
     flex: 1;
     margin-right: 32px;
+    @include tablet {
+        margin: 0 0 147px;
+    }
 
     &__title {
 
         .section-ghost-title {
-            left: -137px;
+            @include desktop-only {
+                left: -137px;
+            }
         }
         .section-title {
-            text-align: left;
+            @include desktop-only {
+                text-align: left;
+            }
         }
     }
 }

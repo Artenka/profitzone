@@ -10,6 +10,9 @@
     max-width: 1076px;
     margin: 65px auto 0;
     position: relative;
+    @include tablet {
+        margin-top: 56px;
+    }
 }
 
 .home-whom-about {
@@ -23,6 +26,9 @@
     background: url(../img/home/whom/about-circle.svg) no-repeat center / cover;
     position: relative;
     z-index: 2;
+    @include tablet-mobile {
+        margin: 0 auto;
+    }
 
     &__item {
         text-align: center;
@@ -47,6 +53,9 @@
     position: absolute;
     top: 0;
     left: 0;
+    @include tablet {
+        top: 496px;
+    }
 }
 
 .home-whom-people-item {
@@ -63,59 +72,117 @@
         width: 174px;
         font-weight: 500;
         line-height: 140%;
+        @include tablet-mobile {
+            text-align: center;
+        }
     }
 
     &.home-whom-people-item--1 {
         top: 38px;
         left: 636px;
+        @include tablet {
+            top: 215px;
+            left: 462px;
+        }
 
         .home-whom-people-item__img {
             width: 435px;
             height: 215px;
             background-image: url(../img/home/whom/item-1.svg);
             top: -33px;
+            @include tablet {
+                width: 220px;
+                height: 439px;
+                background-image: url(../img/home/whom/item-1-tablet.svg);
+                top: -450px;
+                left: -76px;
+            }
         }
     }
     &.home-whom-people-item--2 {
         top: 117px;
         left: 965px;
+        @include tablet {
+            top: 546px;
+            left: 400px;
+        }
 
         .home-whom-people-item__img {
             width: 609px;
             height: 187px;
             background-image: url(../img/home/whom/item-2.svg);
+            @include tablet {
+                width: 197px;
+                height: 613px;
+                background-image: url(../img/home/whom/item-2-tablet.svg);
+                top: -625px;
+                left: -53px;
+            }
         }
     }
     &.home-whom-people-item--3 {
         top: 254px;
         left: 775px;
+        @include tablet {
+            top: 357px;
+            left: 260px;
+        }
 
         .home-whom-people-item__img {
             width: 591px;
             height: 118px;
             background-image: url(../img/home/whom/item-3.svg);
+            @include tablet {
+                width: 127px;
+                height: 594px;
+                background-image: url(../img/home/whom/item-3-tablet.svg);
+                top: -606px;
+                left: 17px;
+            }
         }
     }
     &.home-whom-people-item--4 {
         top: 396px;
         left: 967px;
+        @include tablet {
+            top: 551px;
+            left: 121px;
+        }
 
         .home-whom-people-item__img {
             width: 581px;
             height: 165px;
             background-image: url(../img/home/whom/item-4.svg);
             top: -100px;
+            @include tablet {
+                width: 173px;
+                height: 584px;
+                background-image: url(../img/home/whom/item-4-tablet.svg);
+                top: -596px;
+                left: 26px;
+            }
         }
     }
     &.home-whom-people-item--5 {
         top: 439px;
         left: 636px;
+        @include tablet {
+            top: 215px;
+            left: 76px;
+        }
 
         .home-whom-people-item__img {
             width: 579px;
             height: 146px;
             background-image: url(../img/home/whom/item-5.svg);
             top: -82px;
+            @include tablet {
+                width: 153px;
+                height: 583px;
+                background-image: url(../img/home/whom/item-5-tablet.svg);
+                top: -596px;
+                left: 26px;
+            }
         }
     }
 }
@@ -124,6 +191,9 @@
     min-height: 395px;
     margin-top: 118px;
     position: relative;
+    @include tablet {
+        margin-top: 685px;
+    }
     &:before {
         content: '';
         width: 1195px;
@@ -132,6 +202,9 @@
         position: absolute;
         bottom: 0;
         left: calc(50% - 960px);
+        @include tablet {
+            left: calc(50% - 680px);
+        }
     }
     &:after {
         content: '';
@@ -141,22 +214,40 @@
         position: absolute;
         bottom: 193px;
         left: calc(50% - 87px);
+        @include tablet {
+            left: calc(50% + 193px);
+        }
     }
 }
 
 .home-whom-stairs {
-    max-width: 1280px;
+    width: 1280px;
     display: flex;
     align-items: flex-start;
     padding-right: 45px;
-    margin: 0 auto;
     position: relative;
+    left: calc(50% - 640px);
     z-index: 2;
+    @include tablet-mobile {
+        flex-direction: column;
+        padding-right: 0;
+    }
+    @include tablet {
+        width: 710px;
+        left: calc(50% - 355px);
+    }
 }
 
 .home-whom-stairs-list {
     flex: 1;
     padding-top: 27px;
+    @include tablet-mobile {
+        order: 2;
+    }
+    @include tablet {
+        min-height: 395px;
+        margin-top: 45px;
+    }
 }
 .home-whom-stairs-item {
     display: flex;
@@ -189,18 +280,34 @@
     }
 
     &__text {
-
+        @include tablet {
+            font-size: 14px;
+        }
     }
 }
 
 .home-whom-action {
     padding-top: 87px;
+    @include tablet-mobile {
+        width: 100%;
+        order: 1;
+        padding-top: 0;
+    }
+    @include tablet {
+        display: flex;
+        align-items: center;
+    }
 
     &__title {
-
+        @include tablet {
+            flex: 1;
+        }
     }
 
     &__btn {
         margin-top: 32px;
+        @include tablet {
+            margin-top: 0;
+        }
     }
 }

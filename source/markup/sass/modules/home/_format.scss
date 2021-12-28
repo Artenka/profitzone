@@ -1,16 +1,25 @@
 .home-format-section {
     padding: 80px 0 0;
+    @include tablet {
+        padding-top: 65px;
+    }
 }
 
 .home-format {
-    max-width: 1264px;
-    margin: 0 auto;
+    position: relative;
+    @include desktop-only {
+        width: 1264px;
+        left: calc(50% - 632px);
+    }
 }
 
 .home-format-main {
     min-height: 432px;
     margin-top: 50px;
     position: relative;
+    @include tablet {
+        margin-top: 25px;
+    }
 
     &__decor {
         width: 568px;
@@ -20,11 +29,20 @@
         bottom: 0;
         left: 372px;
         z-index: 2;
+        @include tablet {
+            top: calc(100% + 26px);
+            left: calc(50% - 284px);
+        }
     }
 }
 
 .home-format-list {
     position: relative;
+    @include tablet {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
 }
 
 .home-format-item {
@@ -39,6 +57,10 @@
     @include desktop-only {
         height: 89px;
         position: absolute;
+    }
+    @include tablet {
+        width: 332px;
+        margin-top: 25px;
     }
 
     &__text {
@@ -60,12 +82,18 @@
             top: 0;
             left: 0;
         }
+        @include tablet {
+            order: 1;
+        }
     }
     &.home-format-item--2 {
         @include desktop-only {
             width: 332px;
             top: 0;
             left: 513px;
+        }
+        @include tablet {
+            order: 2;
         }
     }
     &.home-format-item--3 {
@@ -74,14 +102,31 @@
             top: 115px;
             left: 0;
         }
+        @include tablet {
+            order: 3;
+        }
     }
     &.home-format-item--4 {
         background: #F73E91;
+        position: relative;
         @include desktop-only {
             width: 328px;
             text-align: right;
             top: 0;
             left: 936px;
+        }
+        @include tablet {
+            order: 4;
+        }
+        &:before  {
+            content: '';
+            width: 27px;
+            height: 100px;
+            background: url(../img/home/format/exclamation-mark.svg);
+            position: absolute;
+            top: -7px;
+            left: -12px;
+            z-index: 2;
         }
     }
     &.home-format-item--5 {
@@ -89,6 +134,10 @@
             width: 283px;
             top: 115px;
             left: 981px;
+        }
+        @include tablet {
+            order: 6;
+            width: 209px;
         }
     }
     &.home-format-item--6 {
@@ -98,6 +147,10 @@
             top: 230px;
             left: 0;
         }
+        @include tablet {
+            order: 5;
+            width: 456px;
+        }
     }
     &.home-format-item--7 {
         @include desktop-only {
@@ -105,6 +158,11 @@
             height: 175px;
             top: 230px;
             left: 896px;
+        }
+        @include tablet {
+            width: 100%;
+            order: 7;
+            padding: 27px 57px 16px;
         }
     }
 }
@@ -114,6 +172,10 @@
     border-radius: 20px;
     text-align: center;
     padding: 35px 236px 30px;
+    @include tablet {
+        padding: 35px 30px;
+        margin-top: 341px;
+    }
 
     &__title {
 

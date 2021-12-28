@@ -18,6 +18,9 @@
 .main-header-menu {
     display: flex;
     align-items: center;
+    @include tablet {
+        display: none;
+    }
 
     &__item {
         font-weight: 600;

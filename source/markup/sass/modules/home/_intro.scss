@@ -1,10 +1,16 @@
 .home-intro-section {
     background: url(../img/home/intro/bg.svg) no-repeat center / cover, #4949B7;
+    @include tablet {
+        background: url(../img/home/intro/bg-tablet.svg) no-repeat center bottom / cover, #4949B7;
+    }
 }
 
 .home-intro {
     padding: 70px 0 86px;
     position: relative;
+    @include tablet {
+        padding: 34px 0 441px;
+    }
 
     &__title {
         max-width: 760px;
@@ -16,6 +22,9 @@
 
 .home-intro-ul {
     margin-top: 37px;
+    @include tablet {
+        margin-top: 45px;
+    }
 
     &__li {
         color: #FFFFFF;
@@ -39,12 +48,19 @@
 
 .home-intro-btn {
     margin-top: 43px;
+    @include tablet {
+        margin-top: 37px;
+    }
 }
 
 .home-intro-features {
     position: absolute;
     top: 40px;
     left: 744px;
+    @include tablet {
+        top: calc(100% - 370px);
+        left: 0;
+    }
 }
 .home-intro-features-item {
     width: 323px;
@@ -54,11 +70,23 @@
     align-items: center;
     padding: 7px 50px 7px 20px;
     margin-bottom: 6px;
+    @include tablet {
+        width: 253px;
+        min-height: 40px;
+        background-image: url(../img/home/intro/feature-bg-tablet.svg);
+        padding: 6px 12px 6px 38px;
+    }
     &:nth-child(2) {
         margin-left: 31px;
+        @include tablet {
+            margin-left: 16px;
+        }
     }
     &:nth-child(3) {
         margin-left: 62px;
+        @include tablet {
+            margin-left: 32px;
+        }
     }
     &:last-child {
         margin-bottom: 0;
@@ -66,12 +94,26 @@
 
     &__title, &__title-img {
         margin-right: 17px;
+        @include tablet {
+            margin-right: 12px;
+        }
     }
     &__title {
         font-weight: 800;
         font-size: 30px;
         line-height: 100%;
         color: #5845DD;
+        @include tablet {
+            font-size: 23px;
+        }
+    }
+    &__title-img {
+        max-width: 41px;
+        max-height: 21px;
+        @include tablet {
+            max-width: 32px;
+            max-height: 16px;
+        }
     }
     &__text {
         flex: 1;
@@ -79,5 +121,8 @@
         font-size: 12px;
         line-height: 130%;
         color: #FFFFFF;
+        @include tablet {
+            font-size: 10px;
+        }
     }
 }

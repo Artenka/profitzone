@@ -23,6 +23,9 @@
 
     &__title {
         margin-left: 125px;
+        @include tablet-mobile {
+            margin-left: 0;
+        }
 
         .section-ghost-title {
             width: auto;
@@ -39,6 +42,18 @@
 .home-students-slider-layout {
     border-bottom: 1px solid #3F4776;
     position: relative;
+    @include tablet-mobile {
+        border-bottom: 0;
+    }
+    &:before {
+        content: '';
+        width: 100vw;
+        height: 1px;
+        background: #3F4776;
+        position: absolute;
+        bottom: 0;
+        left: calc(50% - 50vw);
+    }
 }
 
 .home-students-slider-decor {
@@ -48,10 +63,18 @@
     position: absolute;
     bottom: -1px;
     right: 27px;
+    @include tablet {
+        width: 326px;
+        height: 334px;
+        right: -45px;
+    }
 }
 
 .home-students-slider {
     padding: 45px 0 50px 125px;
+    @include tablet-mobile {
+        padding-left: 0;
+    }
 
     .slick-list {
         overflow: visible;
@@ -74,6 +97,9 @@
         &.slick-next {
             background-image: url(../img/home/students/arrow-right.svg);
             left: 1116px;
+            @include tablet {
+                left: 677px;
+            }
         }
     }
 
@@ -84,6 +110,9 @@
         top: calc(100% + 32px);
         left: 125px;
         z-index: 5;
+        @include tablet-mobile {
+            left: 0;
+        }
 
         > li {
             font-weight: 500;
@@ -178,6 +207,9 @@
         position: absolute;
         top: calc(100% + 60px);
         left: 660px;
+        @include tablet {
+            left: 410px;
+        }
     }
 }
 
@@ -197,9 +229,16 @@
 .home-students-video-slide {
     width: 580px;
     padding: 0 35px;
+    @include tablet {
+        width: 378px;
+        padding: 0 20px;
+    }
 
     &.slick-current {
         width: 900px;
+        @include tablet {
+            width: 496px;
+        }
     }
 }
 

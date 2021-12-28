@@ -1,5 +1,8 @@
 .home-receive-section {
     padding: 100px 0 0;
+    @include tablet {
+        padding-top: 65px;
+    }
 }
 
 .home-receive {
@@ -11,13 +14,26 @@
     display: flex;
     align-items: flex-start;
     margin: 63px auto 0;
+    @include tablet-mobile {
+        max-width: 540px;
+        flex-direction: column;
+    }
 
     &__left {
         width: calc(50% - 17px);
         margin-right: 108px;
+        @include tablet-mobile {
+            width: 100%;
+        }
+        @include tablet {
+            margin: 0 0 36px;
+        }
     }
     &__right {
         width: calc(50% - 91px);
+        @include tablet-mobile {
+            width: 100%;
+        }
     }
 }
 
@@ -28,10 +44,25 @@
     border-radius: 20px;
     padding: 13px 124px;
     margin-top: 71px;
+    @include tablet-mobile {
+        width: 100vw;
+        flex-direction: column;
+        border-radius: 0;
+        text-align: center;
+        padding: 40px 10px 49px;
+        position: relative;
+        left: calc(50% - 50vw);
+    }
+    @include tablet {
+        margin-top: 45px;
+    }
 
     &__main {
         flex: 1;
         margin-right: 20px;
+        @include tablet {
+            margin: 0 0 38px;
+        }
     }
 
     &__title {
@@ -51,6 +82,9 @@
         max-width: 670px;
         padding-bottom: 8px;
         margin-top: 4px;
+        @include tablet {
+            margin-top: 24px;
+        }
     }
 
     &__btn {

@@ -20,7 +20,8 @@ body {
     padding: 0 30px;
     margin: 0 auto;
     @include tablet {
-        max-width: 710px;
+        max-width: 730px;
+        padding: 0 10px;
     }
     @include mobile {
         max-width: 310px;
@@ -28,7 +29,7 @@ body {
 }
 
 .main {
-
+    overflow-x: hidden;
 }
 
 a {

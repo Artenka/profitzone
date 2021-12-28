@@ -1,6 +1,9 @@
 .home-gives-section {
     background: #121D54;
     padding: 90px 0 125px;
+    @include tablet {
+        padding-bottom: 72px;
+    }
 }
 
 .home-gives {
@@ -17,6 +20,10 @@
     text-align: right;
     margin-bottom: 130px;
     position: relative;
+    @include tablet {
+        width: 460px;
+        margin-bottom: 150px;
+    }
     &:before {
         content: '';
         background: no-repeat center / contain;
@@ -36,6 +43,13 @@
             background: url(../img/home/gives/item-1.svg);
             top: -40px;
             left: -556px;
+            @include tablet {
+                width: 252px;
+                height: 247px;
+                background: url(../img/home/gives/item-1-tablet.svg);
+                top: -16px;
+                left: -282px;
+            }
         }
     }
     &:nth-child(2) {
@@ -45,6 +59,13 @@
             background: url(../img/home/gives/item-2.svg);
             top: -96px;
             left: 631px;
+            @include tablet {
+                width: 271px;
+                height: 311px;
+                background: url(../img/home/gives/item-2-tablet.svg);
+                top: -120px;
+                left: 480px;
+            }
         }
     }
 }

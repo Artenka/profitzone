@@ -1,5 +1,8 @@
 .home-sells-section {
     padding: 160px 0 0;
+    @include tablet {
+        padding-top: 86px;
+    }
 }
 
 .home-sells {
@@ -12,6 +15,9 @@
     align-items: flex-start;
     justify-content: space-between;
     margin: 0 auto;
+    @include tablet-mobile {
+        flex-direction: column;
+    }
 }
 
 .home-sells-video {
@@ -19,6 +25,12 @@
     padding-top: 37px;
     margin-top: 51px;
     position: relative;
+    @include tablet-mobile {
+        order: 2;
+    }
+    @include tablet {
+        margin-top: 112px;
+    }
 
     &__iframe {
         height: 347px;
@@ -45,6 +57,10 @@
 
 .home-sells-content {
     width: 435px;
+    @include tablet-mobile {
+        order: 1;
+        width: 100%;
+    }
 
     &__title {
 
