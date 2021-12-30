@@ -9,22 +9,35 @@
     @include tablet {
         padding: 78px 0 114px;
     }
+    @include mobile {
+        padding: 54px 0 113px;
+    }
 }
 
 .home-faq-video {
     border-radius: 27px;
     margin: 40px auto 0;
+    @include mobile {
+        border-radius: 11px;
+        margin-top: 30px;
+    }
 
     &__img {
         width: 100%;
         height: auto;
         border-radius: 27px;
         box-shadow: 0px 13.5065px 81.039px rgba(37, 128, 236, 0.31);
+        @include mobile {
+            border-radius: 11px;
+        }
     }
 }
 
 .home-faq-list {
     margin-top: 61px;
+    @include mobile {
+        margin-top: 32px;
+    }
 }
 
 .home-faq-item {
@@ -38,6 +51,9 @@
         padding-left: 35px;
         position: relative;
         cursor: pointer;
+        @include mobile {
+            padding-left: 18px;
+        }
         &:before {
             content: '';
             width: 8px;
@@ -47,12 +63,18 @@
             position: absolute;
             top: 18px;
             left: 0;
+            @include mobile {
+                top: 14px;
+            }
         }
     }
 
     &__main {
         display: none;
         padding: 20px 107px 0 35px;
+        @include mobile {
+            padding: 5px 70px 0 18px;
+        }
     }
 
     &__title {

@@ -32,6 +32,12 @@
 	}
 }
 
+@mixin desktop-tablet {
+	@media (min-width: #{$sm}) {
+		@content;
+	}
+}
+
 @mixin laptop {
 	@media (max-width: #{$lg}) and (min-width: #{$md}) {
 		@content;

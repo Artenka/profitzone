@@ -3,6 +3,9 @@
     @include tablet {
         background: url(../img/home/intro/bg-tablet.svg) no-repeat center bottom / cover, #4949B7;
     }
+    @include mobile {
+        background: url(../img/home/intro/bg-mobile.svg) no-repeat center bottom / cover, #4949B7;
+    }
 }
 
 .home-intro {
@@ -11,12 +14,18 @@
     @include tablet {
         padding: 34px 0 441px;
     }
+    @include mobile {
+        padding: 27px 0 431px;
+    }
 
     &__title {
         max-width: 760px;
     }
     &__subtitle {
         margin-top: 15px;
+        @include mobile {
+            margin-top: 11px;
+        }
     }
 }
 
@@ -25,12 +34,20 @@
     @include tablet {
         margin-top: 45px;
     }
+    @include mobile {
+        margin-top: 16px;
+    }
 
     &__li {
         color: #FFFFFF;
         padding-left: 32px;
         margin-bottom: 21px;
         position: relative;
+        @include mobile {
+            font-size: 13px;
+            line-height: 120%;
+            margin-bottom: 16px;
+        }
         &:before {
             content: '';
             width: 18px;
@@ -51,6 +68,9 @@
     @include tablet {
         margin-top: 37px;
     }
+    @include mobile {
+        margin-top: 18px;
+    }
 }
 
 .home-intro-features {
@@ -59,6 +79,10 @@
     left: 744px;
     @include tablet {
         top: calc(100% - 370px);
+        left: 0;
+    }
+    @include mobile {
+        top: calc(100% - 410px);
         left: 0;
     }
 }
@@ -76,16 +100,28 @@
         background-image: url(../img/home/intro/feature-bg-tablet.svg);
         padding: 6px 12px 6px 38px;
     }
+    @include mobile {
+        width: 253px;
+        min-height: 40px;
+        background-image: url(../img/home/intro/feature-bg-mobile.svg);
+        padding: 6px 30px 6px 12px;
+    }
     &:nth-child(2) {
         margin-left: 31px;
         @include tablet {
             margin-left: 16px;
+        }
+        @include mobile {
+            margin-left: 12px;
         }
     }
     &:nth-child(3) {
         margin-left: 62px;
         @include tablet {
             margin-left: 32px;
+        }
+        @include mobile {
+            margin-left: 24px;
         }
     }
     &:last-child {
@@ -94,7 +130,7 @@
 
     &__title, &__title-img {
         margin-right: 17px;
-        @include tablet {
+        @include tablet-mobile {
             margin-right: 12px;
         }
     }
@@ -103,14 +139,14 @@
         font-size: 30px;
         line-height: 100%;
         color: #5845DD;
-        @include tablet {
+        @include tablet-mobile {
             font-size: 23px;
         }
     }
     &__title-img {
         max-width: 41px;
         max-height: 21px;
-        @include tablet {
+        @include tablet-mobile {
             max-width: 32px;
             max-height: 16px;
         }
@@ -121,7 +157,7 @@
         font-size: 12px;
         line-height: 130%;
         color: #FFFFFF;
-        @include tablet {
+        @include tablet-mobile {
             font-size: 10px;
         }
     }

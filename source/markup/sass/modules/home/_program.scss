@@ -4,6 +4,10 @@
     @include tablet {
         padding-bottom: 74px;
     }
+    @include mobile {
+        background-image: url(../img/home/program/bg-mobile.svg);
+        padding: 58px 0 42px;
+    }
 }
 
 .home-program {
@@ -17,6 +21,9 @@
         margin-top: 130px;
         @include tablet {
             margin-top: 140px;
+        }
+        @include mobile {
+            margin-top: 90px;
         }
     }
 }
@@ -43,9 +50,17 @@
     padding: 50px 76px;
     margin: 58px 16px 0;
     position: relative;
-    @include tablet {
+    @include tablet-mobile {
         width: 100%;
+    }
+    @include tablet {
         margin: 58px 0 0;
+    }
+    @include mobile {
+        min-height: 200px;
+        border-radius: 30px;
+        padding: 39px 15px 20px 23px;
+        margin: 30px 0 0;
     }
 
     &__title {
@@ -54,6 +69,10 @@
         font-weight: bold;
         font-size: 26px;
         line-height: 151%;
+        margin-bottom: 16px;
+        @include mobile {
+            font-size: 20px;
+        }
 
         &_line {
             width: 6px;
@@ -73,7 +92,7 @@
     }
 
     &__text {
-        margin-top: 16px;
+
     }
 
     &__ul {
@@ -86,6 +105,10 @@
             padding-left: 36px;
             margin-bottom: 30px;
             position: relative;
+            @include mobile {
+                font-size: 16px;
+                padding-left: 28px;
+            }
             &:before {
                 content: '';
                 width: 6px;
@@ -95,6 +118,9 @@
                 position: absolute;
                 top: calc(50% - 3px);
                 left: 12px;
+                @include mobile {
+                    left: 0;
+                }
             }
             &:after {
                 content: '';
@@ -104,6 +130,9 @@
                 position: absolute;
                 bottom: -25px;
                 left: 36px;
+                @include mobile {
+                    left: 30px;
+                }
             }
             &:last-child {
                 margin-bottom: 0;
@@ -123,6 +152,10 @@
         right: -2px;
         cursor: pointer;
         transition: 0.3s;
+        @include mobile {
+            width: 79px;
+            height: 79px;
+        }
         &:hover {
             background-image: url(../img/home/program/item-plus-hover.svg);
         }
@@ -143,6 +176,11 @@
         top: -79px;
         right: -73px;
         transform: rotate(45deg);
+        @include mobile {
+            transform: scale(0.7) rotate(45deg);
+            top: -97px;
+            right: -92px;
+        }
     }
 
     &__header {
@@ -153,6 +191,10 @@
         position: relative;
         top: -2px;
         left: -2px;
+        @include mobile {
+            border-radius: 30px 30px 0 0;
+            padding: 17px 20px;
+        }
     }
 
     &__main {
@@ -169,6 +211,9 @@
         @include tablet {
             padding-right: 57px;
         }
+        @include mobile {
+            padding: 26px 12px 43px;
+        }
 
         &.home-program-item__col--1 {
             background: rgba(24, 17, 66, 0.28);
@@ -178,11 +223,17 @@
             @include tablet {
                 padding-left: 76px;
             }
+            @include mobile {
+                padding: 27px 12px 33px;
+            }
         }
     }
 
     &__tabs-btns {
         margin-top: 34px;
+        @include mobile {
+            margin-top: 21px;
+        }
     }
 
     &__tabs-btn {
@@ -220,6 +271,10 @@
             position: absolute;
             bottom: 0;
             right: 0;
+            @include mobile {
+                height: 126px;
+                width: calc(100% - 20px);
+            }
         }
     }
 
@@ -229,8 +284,11 @@
         padding-left: 42px;
         overflow-y: auto;
         direction: rtl;
-        @include tablet {
+        @include tablet-mobile {
             max-height: 410px;
+        }
+        @include mobile {
+            padding-left: 25px;
         }
 
         &::-webkit-scrollbar {
@@ -260,8 +318,11 @@
         }
         &_text {
             margin-top: 40px;
-            @include tablet {
+            @include tablet-mobile {
                 font-size: 14px;
+            }
+            @include mobile {
+                margin-top: 24px;
             }
             &:first-child {
                 margin-top: 0;
@@ -275,6 +336,9 @@
 
     &__btn {
         margin-top: 50px;
+        @include mobile {
+            margin-top: 29px;
+        }
     }
 
     &.home-program-item--lg {
@@ -300,12 +364,19 @@
         max-width: 645px;
         margin-top: 68px;
     }
+    @include mobile {
+        margin-top: 34px;
+    }
 
     &__title-1, &__title-2 {
         font-size: 20px;
         line-height: 160%;
         text-align: center;
         color: #FFFFFF;
+        @include mobile {
+            font-size: 18px;
+            line-height: 156%;
+        }
     }
     &__title-1 {
         font-weight: 600;
@@ -316,6 +387,9 @@
         @include tablet {
             margin-top: 33px;
         }
+        @include mobile {
+            margin-top: 43px;
+        }
     }
 
     &__title-2 {
@@ -323,6 +397,9 @@
         margin-top: 40px;
         @include tablet {
             margin-top: 33px;
+        }
+        @include mobile {
+            margin-top: 43px;
         }
     }
 
@@ -400,11 +477,23 @@
         position: relative;
         left: calc(50% - 371px);
     }
+    @include mobile {
+        margin-top: 42px;
+    }
 }
 
 .home-program-module-layout {
     width: calc(50% - 32px);
     margin: 40px 16px 0;
+    @include mobile {
+        width: 100%;
+        margin: 26px 0 0;
+    }
+    &:first-child {
+        @include mobile {
+            margin-top: 0;
+        }
+    }
 }
 
 .home-program-module {
@@ -417,11 +506,11 @@
     position: relative;
     cursor: pointer;
     transition: 0.4s;
-    @include tablet {
+    @include tablet-mobile {
         min-height: 127px;
     }
     &:before {
-        @include tablet {
+        @include tablet-mobile {
             content: '';
             width: 46px;
             height: 50px;
@@ -452,6 +541,9 @@
         @include tablet {
             padding: 21px 25px
         }
+        @include mobile {
+            padding: 26px 34px 21px 27px;
+        }
     }
 
     &__title {
@@ -459,6 +551,9 @@
     }
     &__text {
         margin-top: 5px;
+        @include mobile {
+            margin-top: 7px;
+        }
     }
 
     &__btn {
@@ -487,6 +582,9 @@
     @include tablet {
         margin-top: 63px;
     }
+    @include mobile {
+        margin-top: 34px;
+    }
 
     &__title {
         max-width: 515px;
@@ -501,6 +599,9 @@
         margin-top: 32px;
         @include tablet {
             margin-top: 45px;
+        }
+        @include mobile {
+            margin-top: 26px;
         }
 
         a {

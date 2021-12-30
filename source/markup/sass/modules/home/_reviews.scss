@@ -4,6 +4,9 @@
     @include tablet {
         padding: 95px 0 168px;
     }
+    @include mobile {
+        padding: 80px 0 59px;
+    }
 }
 
 .home-reviews {
@@ -15,6 +18,9 @@
     flex-wrap: wrap;
     justify-content: center;
     margin: 0 auto;
+    @include mobile {
+        margin-top: 10px;
+    }
 }
 
 .home-reviews-fact {
@@ -24,6 +30,11 @@
     filter: drop-shadow(0px 4px 25px rgba(53, 81, 147, 0.2));
     padding: 60px 32px 26px;
     margin: 80px 16px 0;
+    @include mobile {
+        width: 100%;
+        padding: 60px 15px 26px;
+        margin: 63px 0 0;
+    }
 
     &__number {
         width: 90px;
@@ -57,6 +68,11 @@
 .home-reviews-slider {
     width: 850px;
     margin: 137px auto 0;
+    @include mobile {
+        width: 340px;
+        padding-bottom: 112px;
+        margin-top: 55px;
+    }
     &:before, &:after {
         content: '';
         width: 310px;
@@ -65,6 +81,9 @@
         position: absolute;
         top: 0;
         z-index: 2;
+        @include mobile {
+            display: none;
+        }
     }
     &:before {
         left: calc(50% - 50vw);
@@ -93,19 +112,41 @@
         z-index: 3;
         cursor: pointer;
         transition: background-color 0.3s;
+        @include mobile {
+            width: 76px;
+            height: 76px;
+            border-radius: 20px;
+            background: #E8EFF9;
+            top: auto;
+            bottom: 0;
+        }
 
         &.slick-prev {
             background: url(../img/home/reviews/arrow-left.svg) no-repeat center right 25px, #121D54;
             left: calc(50% - 50vw - 240px);
+            @include mobile {
+                background: url(../img/home/reviews/arrow-left-mobile.svg) no-repeat center, #E8EFF9;
+                left: calc(50% - 100px);
+            }
             &:hover {
                 background: url(../img/home/reviews/arrow-left-hover.svg) no-repeat center right -25px, #FF9900;
+                @include mobile {
+                    background: url(../img/home/reviews/arrow-left-mobile-hover.svg) no-repeat center, #FF9900;
+                }
             }
         }
         &.slick-next {
             background: url(../img/home/reviews/arrow-right.svg) no-repeat center left 25px, #121D54;
             right: calc(50% - 50vw - 240px);
+            @include mobile {
+                background: url(../img/home/reviews/arrow-right-mobile.svg) no-repeat center, #E8EFF9;
+                right: calc(50% - 100px);
+            }
             &:hover {
                 background: url(../img/home/reviews/arrow-right-hover.svg) no-repeat center left -25px, #FF9900;
+                @include mobile {
+                    background: url(../img/home/reviews/arrow-right-mobile-hover.svg) no-repeat center, #FF9900;
+                }
             }
         }
     }
@@ -114,9 +155,18 @@
 .home-reviews-slide {
     width: 250px;
     padding: 0 25px;
+    @include mobile {
+        width: 100%;
+        padding: 0;
+        opacity: 0;
+    }
 
     &.slick-current {
         width: 350px;
+        @include mobile {
+            width: 100%;
+            opacity: 1;
+        }
 
         .home-reviews-slide-content {
 
@@ -124,6 +174,10 @@
                 filter: drop-shadow(0px 17.3768px 104.261px rgba(37, 128, 236, 0.31));
                 border-radius: 35px;
                 transform: scale(1.5);
+                @include mobile {
+                    filter: drop-shadow(0px 15px 40px rgba(37, 128, 236, 0.2));
+                    transform: scale(1);
+                }
             }
         }
     }

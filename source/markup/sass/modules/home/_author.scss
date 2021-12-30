@@ -1,7 +1,10 @@
 .home-author-section {
     padding: 80px 0 0;
     @include tablet {
-        padding-top: -71px;
+        padding-top: 71px;
+    }
+    @include mobile {
+        padding-top: 56px;
     }
 }
 
@@ -17,6 +20,9 @@
 
         .section-ghost-title, .section-title {
             text-align: left;
+            @include mobile {
+                text-align: center;
+            }
         }
 
         .section-ghost-title {
@@ -29,6 +35,9 @@
 .home-author-main {
     margin-top: 48px;
     position: relative;
+    @include mobile {
+        margin-top: 35px;
+    }
 }
 
 .home-author-info {
@@ -36,11 +45,21 @@
     @include tablet {
         width: 332px;
     }
+    @include mobile {
+        width: 284px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
 
     &__photo {
         width: 100%;
         height: auto;
         border-radius: 20px;
+        @include mobile {
+            width: 200px;
+        }
     }
 
     &__content {
@@ -49,6 +68,9 @@
         @include tablet {
             padding: 22px 0 0;
         }
+        @include mobile {
+            padding: 11px 0 0;
+        }
     }
 
     &__name {
@@ -56,6 +78,9 @@
         font-size: 24px;
         line-height: 140%;
         color: #1B1F39;
+        @include mobile {
+            font-size: 18px;
+        }
     }
     &__text {
         font-weight: 300;
@@ -63,6 +88,10 @@
         line-height: 175%;
         color: #1B1F39;
         margin-top: 16px;
+        @include mobile {
+            font-size: 14px;
+            margin-top: 11px;
+        }
 
         a {
             font-weight: 600;
@@ -89,6 +118,16 @@
         top: 35px;
         left: 260px;
     }
+    @include mobile {
+        width: 100vw;
+        background: url(../img/home/author/quote.svg) no-repeat top 23px left 20px / 36px, #121D54;
+        line-height: 143%;
+        padding: 72px 20px 15px;
+        margin-top: 27px;
+        position: relative;
+        top: 0;
+        left: calc(50% - 50vw);
+    }
 }
 
 .home-author-list {
@@ -99,8 +138,12 @@
         top: 322px;
         left: 540px;
     }
-    @include tablet {
+    @include tablet-mobile {
         margin: 54px auto 0;
+    }
+    @include mobile {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -113,8 +156,15 @@
     @include tablet {
         margin-right: 64px;
     }
+    @include mobile {
+        width: 310px;
+        margin: 0 0 64px;
+    }
     &:last-child {
         margin-right: 0;
+        @include mobile {
+            margin-bottom: 0;
+        }
     }
 
     &__icon {

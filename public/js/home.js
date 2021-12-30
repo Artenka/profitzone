@@ -11,6 +11,16 @@ $(function() {
         centerMode: true,
         variableWidth: true,
         focusOnSelect: true,
+        centerPadding: 0,
+        responsive: [
+            {
+                breakpoint: 740,
+                settings: {
+                    slidesToShow: 1,
+                    variableWidth: false
+                }
+            }
+        ]
     });
 
     // students slider

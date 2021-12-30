@@ -1,5 +1,8 @@
 .home-whom-section {
     padding: 90px 0 0;
+    @include mobile {
+        padding-top: 50px;
+    }
 }
 
 .home-whom {
@@ -12,6 +15,9 @@
     position: relative;
     @include tablet {
         margin-top: 56px;
+    }
+    @include mobile {
+        margin-top: 35px;
     }
 }
 
@@ -29,10 +35,16 @@
     @include tablet-mobile {
         margin: 0 auto;
     }
+    @include mobile {
+        left: calc(50% - 248px);
+    }
 
     &__item {
         text-align: center;
         margin-bottom: 76px;
+        @include mobile {
+            max-width: 340px;
+        }
         &:last-child {
             margin-bottom: 0;
         }
@@ -53,7 +65,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    @include tablet {
+    @include tablet-mobile {
         top: 496px;
     }
 }
@@ -84,6 +96,10 @@
             top: 215px;
             left: 462px;
         }
+        @include mobile {
+            top: 160px;
+            left: 182px;
+        }
 
         .home-whom-people-item__img {
             width: 435px;
@@ -97,6 +113,13 @@
                 top: -450px;
                 left: -76px;
             }
+            @include mobile {
+                width: 214px;
+                height: 406px;
+                background-image: url(../img/home/whom/item-1-mobile.svg);
+                top: -418px;
+                left: -70px;
+            }
         }
     }
     &.home-whom-people-item--2 {
@@ -105,6 +128,10 @@
         @include tablet {
             top: 546px;
             left: 400px;
+        }
+        @include mobile {
+            top: 500px;
+            left: 184px;
         }
 
         .home-whom-people-item__img {
@@ -118,6 +145,13 @@
                 top: -625px;
                 left: -53px;
             }
+            @include mobile {
+                width: 171px;
+                height: 558px;
+                background-image: url(../img/home/whom/item-2-mobile.svg);
+                top: -568px;
+                left: -28px;
+            }
         }
     }
     &.home-whom-people-item--3 {
@@ -126,6 +160,10 @@
         @include tablet {
             top: 357px;
             left: 260px;
+        }
+        @include mobile {
+            top: 350px;
+            left: 57px;
         }
 
         .home-whom-people-item__img {
@@ -139,6 +177,13 @@
                 top: -606px;
                 left: 17px;
             }
+            @include mobile {
+                width: 128px;
+                height: 565px;
+                background-image: url(../img/home/whom/item-3-mobile.svg);
+                top: -577px;
+                left: 20px;
+            }
         }
     }
     &.home-whom-people-item--4 {
@@ -147,6 +192,10 @@
         @include tablet {
             top: 551px;
             left: 121px;
+        }
+        @include mobile {
+            top: 528px;
+            left: -18px;
         }
 
         .home-whom-people-item__img {
@@ -161,6 +210,13 @@
                 top: -596px;
                 left: 26px;
             }
+            @include mobile {
+                width: 122px;
+                height: 610px;
+                background-image: url(../img/home/whom/item-4-mobile.svg);
+                top: -622px;
+                left: 30px;
+            }
         }
     }
     &.home-whom-people-item--5 {
@@ -169,6 +225,10 @@
         @include tablet {
             top: 215px;
             left: 76px;
+        }
+        @include mobile {
+            top: 172px;
+            left: -38px;
         }
 
         .home-whom-people-item__img {
@@ -183,16 +243,28 @@
                 top: -596px;
                 left: 26px;
             }
+            @include mobile {
+                width: 179px;
+                height: 553px;
+                background-image: url(../img/home/whom/item-5-mobile.svg);
+                top: -565px;
+                left: 34px;
+            }
         }
     }
 }
 
 .home-whom-stairs-layout {
-    min-height: 395px;
     margin-top: 118px;
     position: relative;
+    @include desktop-tablet {
+        min-height: 395px;
+    }
     @include tablet {
         margin-top: 685px;
+    }
+    @include mobile {
+        margin-top: 604px;
     }
     &:before {
         content: '';
@@ -204,6 +276,9 @@
         left: calc(50% - 960px);
         @include tablet {
             left: calc(50% - 680px);
+        }
+        @include mobile {
+            display: none;
         }
     }
     &:after {
@@ -217,17 +292,22 @@
         @include tablet {
             left: calc(50% + 193px);
         }
+        @include mobile {
+            display: none;
+        }
     }
 }
 
 .home-whom-stairs {
-    width: 1280px;
     display: flex;
     align-items: flex-start;
     padding-right: 45px;
     position: relative;
-    left: calc(50% - 640px);
     z-index: 2;
+    @include desktop-tablet {
+        width: 1280px;
+        left: calc(50% - 640px);
+    }
     @include tablet-mobile {
         flex-direction: column;
         padding-right: 0;
@@ -241,6 +321,7 @@
 .home-whom-stairs-list {
     flex: 1;
     padding-top: 27px;
+    position: relative;
     @include tablet-mobile {
         order: 2;
     }
@@ -248,17 +329,40 @@
         min-height: 395px;
         margin-top: 45px;
     }
+    @include mobile {
+        padding-bottom: 38px;
+        margin-top: 44px;
+    }
+    &:before {
+        @include mobile {
+            content: '';
+            width: 100vw;
+            height: 100%;
+            background: #121D54;
+            position: absolute;
+            top: 0;
+            left: calc(50% - 50vw);
+        }
+    }
 }
 .home-whom-stairs-item {
     display: flex;
     align-items: center;
     margin-bottom: 6px;
+    @include mobile {
+        margin-bottom: 14px;
+        position: relative;
+        z-index: 2;
+    }
     &:last-child {
         margin-bottom: 0;
     }
     @for $i from 1 through 6 {
         &:nth-child(#{$i}) {
             margin-left: 60px * ($i - 1);
+            @include mobile {
+                margin-left: 0;
+            }
         }
     }
 
@@ -271,11 +375,20 @@
         border-radius: 50%;
         background: rgba(203, 205, 235, 0.22);
         margin-right: 19px;
+        @include mobile {
+            width: 37px;
+            height: 37px;
+            margin-right: 15px;
+        }
 
         &_img {
             width: 20px;
             height: 20px;
             object-fit: contain;
+            @include mobile {
+                width: 17px;
+                height: 17px;
+            }
         }
     }
 
@@ -308,6 +421,9 @@
         margin-top: 32px;
         @include tablet {
             margin-top: 0;
+        }
+        @include mobile {
+            margin-top: 24px;
         }
     }
 }

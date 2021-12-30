@@ -1,5 +1,8 @@
 .home-system-section {
     padding: 160px 0 0;
+    @include mobile {
+        padding-top: 53px;
+    }
 }
 
 .home-system {
@@ -20,6 +23,10 @@
         @include tablet {
             max-width: 710px;
         }
+        @include mobile {
+            max-width: 340px;
+            margin-bottom: 30px;
+        }
     }
 
     &__left {
@@ -33,6 +40,9 @@
         }
         @include tablet {
             padding: 79px 10px 64px;
+        }
+        @include mobile {
+            padding: 53px 10px 32px;
         }
     }
     &__right {
@@ -54,6 +64,9 @@
             @include tablet {
                 padding: 63px 10px 51px;
             }
+            @include mobile {
+                padding: 34px 10px;
+            }
 
             .home-system-box-blocks {
 
@@ -61,13 +74,16 @@
                     @include tablet {
                         margin-bottom: 24px;
                     }
+                    @include mobile {
+                        margin-bottom: 22px;
+                    }
                 }
             }
 
             .home-system-box-block {
 
                 &__title {
-                    @include tablet {
+                    @include tablet-mobile {
                         display: none;
                     }
                 }
@@ -83,6 +99,9 @@
             @include tablet {
                 padding: 51px 10px 64px;
             }
+            @include mobile {
+                padding: 27px 10px 23px;
+            }
         }
     }
 }
@@ -93,6 +112,9 @@
     }
     @include tablet {
         max-width: 710px;
+    }
+    @include mobile {
+        max-width: 340px;
     }
 
     .home-system-box-block {
@@ -121,6 +143,9 @@
     display: flex;
     align-items: flex-start;
     margin-bottom: 24px;
+    @include mobile {
+        margin-bottom: 22px;
+    }
     &:last-child {
         margin-bottom: 0;
     }
@@ -128,6 +153,9 @@
     &__number {
         width: 24px;
         margin-right: 8px;
+        @include mobile {
+            margin-right: 4px;
+        }
     }
 
     &__text {
@@ -143,15 +171,26 @@
     &__title {
         font-weight: 800;
         font-size: 32px;
+        @include mobile {
+            font-size: 26px;
+        }
 
         &_emoji {
             font-size: 38px;
             line-height: 110%;
             margin-right: 11px;
+            @include mobile {
+                font-size: 31px;
+                margin-right: 9px;
+            }
         }
     }
 
     &__text {
         margin-top: 8px;
+        @include mobile {
+            max-width: 305px;
+            margin: 11px auto 0;
+        }
     }
 }

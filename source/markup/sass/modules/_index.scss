@@ -10,8 +10,7 @@ body {
     line-height: 160%;
     overflow-x: hidden;
     @include mobile {
-        font-size: 12px;
-        line-height: 18px;
+        font-size: 14px;
     }
 }
 
@@ -24,7 +23,8 @@ body {
         padding: 0 10px;
     }
     @include mobile {
-        max-width: 310px;
+        max-width: 360px;
+        padding: 0 10px;
     }
 }
 

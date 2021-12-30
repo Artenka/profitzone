@@ -3,6 +3,9 @@
     @include tablet {
         padding-top: 65px;
     }
+    @include mobile {
+        padding-top: 50px;
+    }
 }
 
 .home-format {
@@ -18,7 +21,12 @@
     margin-top: 50px;
     position: relative;
     @include tablet {
+        padding-bottom: 341px;
         margin-top: 25px;
+    }
+    @include mobile {
+        padding-bottom: 200px;
+        margin-top: 30px;
     }
 
     &__decor {
@@ -29,9 +37,16 @@
         bottom: 0;
         left: 372px;
         z-index: 2;
+        @include tablet-mobile {
+            bottom: 0;
+        }
         @include tablet {
-            top: calc(100% + 26px);
             left: calc(50% - 284px);
+        }
+        @include mobile {
+            width: 324px;
+            height: 180px;
+            left: calc(50% - 162px);
         }
     }
 }
@@ -61,6 +76,16 @@
     @include tablet {
         width: 332px;
         margin-top: 25px;
+    }
+    @include mobile {
+        min-height: 83px;
+        padding: 18px 20px;
+        margin-top: 14px;
+    }
+    &:first-child {
+        @include mobile {
+            margin-top: 0;
+        }
     }
 
     &__text {
@@ -174,7 +199,10 @@
     padding: 35px 236px 30px;
     @include tablet {
         padding: 35px 30px;
-        margin-top: 341px;
+    }
+    @include mobile {
+        text-align: left;
+        padding: 22px 20px 18px;
     }
 
     &__title {
@@ -183,5 +211,8 @@
 
     &__text {
         margin-top: 8px;
+        @include mobile {
+            margin-top: 0;
+        }
     }
 }

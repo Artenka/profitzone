@@ -3,6 +3,9 @@
     @include tablet {
         padding-top: 75px;
     }
+    @include mobile {
+        padding-top: 53px;
+    }
 }
 
 .home-foreword {
@@ -14,6 +17,9 @@
         @include tablet {
             max-width: 663px;
             margin-top: 82px;
+        }
+        @include mobile {
+            margin-top: 59px;
         }
     }
 }
@@ -28,6 +34,11 @@
         flex-wrap: wrap;
         margin-top: 22px;
     }
+    @include mobile {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 55px;
+    }
 }
 
 .home-foreword-item {
@@ -39,6 +50,9 @@
     position: relative;
     @include tablet {
         margin: 52px 80px 0 0;
+    }
+    @include mobile {
+        margin: 65px auto 0;
     }
     &:after {
         content: '';
@@ -55,8 +69,19 @@
             top: 92px;
             left: 246px;
         }
+        @include mobile {
+            width: 31px;
+            height: 172px;
+            background-image: url(../img/home/foreword/arrow-curve-right.svg);
+            top: auto;
+            bottom: -69px;
+            right: 14px;
+        }
     }
     &:first-child {
+        @include mobile {
+            margin-top: 0;
+        }
         &:after {
             @include tablet {
                 width: 171px;
@@ -83,6 +108,15 @@
                 top: 152px;
                 right: auto;
                 left: -145px;
+            }
+            @include mobile {
+                width: 28px;
+                height: 172px;
+                background-image: url(../img/home/foreword/arrow-curve-left.svg);
+                top: auto;
+                bottom: -87px;
+                right: auto;
+                left: -4px;
             }
         }
     }
@@ -119,5 +153,8 @@
         background: #4949B7;
         position: relative;
         left: calc(50% - 50vw);
+    }
+    @include mobile {
+        margin-top: 115px;
     }
 }
