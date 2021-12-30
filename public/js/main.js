@@ -40,6 +40,10 @@ $(function () {
     $('.main-header-burger').click(function () {
         $(this).toggleClass('main-header-burger--active burger--active');
     });
+    $('.main-header-submenu__close').click(function (e) {
+        e.stopPropagation();
+        $('.main-header-burger').removeClass('main-header-burger--active burger--active');
+    });
 
     // lang switcher
     $('.lang-switcher').click(function () {

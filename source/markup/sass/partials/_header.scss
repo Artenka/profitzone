@@ -51,11 +51,26 @@
     display: none;
     background: #343482;
     border-radius: 20px;
-    padding: 22px 32px;
     position: absolute;
     top: calc(100% + 50px);
     right: -35px;
     z-index: 5;
+    @include tablet-mobile {
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+        z-index: 101;
+        position: fixed;
+        top: 0;
+        right: auto;
+        left: 0;
+    }
+    @include tablet {
+        padding: 50px 32px;
+    }
+    @include mobile {
+        padding: 50px 32px;
+    }
     &:before {
         content: '';
         width: 0;
@@ -66,6 +81,72 @@
         position: absolute;
         top: -14px;
         right: 28px;
+        @include tablet-mobile {
+            display: none;
+        }
+    }
+
+    &__inner {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__close {
+        display: none;
+        width: 22px;
+        height: 22px;
+        background: url(../img/common/close-22.svg) no-repeat center / contain;
+        position: absolute;
+        top: 27px;
+        right: 108px;
+        @include tablet-mobile {
+            display: block;
+        }
+        @include mobile {
+            right: 17px;
+        }
+    }
+}
+
+.main-header-submenu-additional {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.09);
+    text-align: center;
+    @include tablet-mobile {
+        flex: 1;
+        display: flex;
+    }
+
+    &__item {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 188%;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-bottom: 40px;
+        @include mobile {
+            font-size: 16px;
+            line-height: 100%;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.main-header-submenu-main {
+    padding: 22px 32px;
+    @include tablet-mobile {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
 
     &__item {
@@ -76,6 +157,14 @@
         color: #FFFFFF;
         position: relative;
         z-index: 2;
+        @include tablet {
+            font-size: 18px;
+            line-height: 333%;
+        }
+        @include mobile {
+            font-size: 16px;
+            line-height: 375%;
+        }
     }
 }
 
