@@ -1,0 +1,44 @@
+.error-404-page {
+    background: url(../img/error-404/bg.svg) no-repeat right calc(50% - 330px) bottom -2px, #4949B7;
+    @include laptop {
+        background-size: 900px auto;
+        background-position: right calc(50% - 240px) bottom -2px;
+    }
+    @include tablet {
+        background-size: 794px auto;
+        background-position: center bottom -2px;
+    }
+    @include mobile {
+        background-size: 500px auto;
+        background-position: center bottom -2px;
+    }
+}
+
+.error-404 {
+    padding: 154px 0;
+    @include laptop {
+        padding: 140px 0;
+    }
+    @include tablet {
+        padding: 55px 0 435px;
+    }
+    @include mobile {
+        padding: 58px 0 322px;
+    }
+
+    &__title {
+        font-weight: 800;
+        font-size: 243px;
+        line-height: 137%;
+        color: #FFFFFF;
+        @include laptop-tablet {
+            font-size: 173px;
+        }
+        @include tablet-mobile {
+            text-align: center;
+        }
+        @include mobile {
+            font-size: 127px;
+        }
+    }
+}

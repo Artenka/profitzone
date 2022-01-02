@@ -44,6 +44,12 @@
 	}
 }
 
+@mixin laptop-tablet {
+	@media (max-width: #{$lg}) and (min-width: #{$sm}) {
+		@content;
+	}
+}
+
 @mixin tablet {
 	@media (max-width: #{$md}) and (min-width: #{$sm}) {
 		@content;

@@ -3,6 +3,9 @@ html {
 }
 
 body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     background: #ffffff;
     font-family: Montserrat, sans-serif;
     color: #2D3851;
@@ -29,6 +32,7 @@ body {
 }
 
 .main {
+    flex: 1 0 auto;
     overflow-x: hidden;
 }
 
