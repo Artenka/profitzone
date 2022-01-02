@@ -1,0 +1,28 @@
+extends ../layouts/main
+
+block contents
+
+    .page.success-page
+        include ../partials/header
+
+        .main.success-page-layout
+            .main-wrapper
+                .success.success--3
+                    .success-video
+                        .success-video__col.success-video__col--1
+                            p.title-7.success-video-title Ура! Вся информация уже летит к тебе на почту!
+                            p.subtitle-4.success-video-subtitle А пока можешь ознакомиться с тем, как будет проходить обучение
+                            .success-author.success-author--left
+                                .success-author__content
+                                    p.success-author__title До встречи на уроках!
+                                    p.success-author__name Антон Петренко
+                                img(src="img/success/author.png").success-author__photo
+                            p.subtitle-4.success-video-outro-text
+                                a(href="www.facebook.com/anton.petrenko.71" target="_blank") www.facebook.com/anton.petrenko.71
+                        .success-video__col.success-video__col--2
+                            .success-video-block.success-video-block--lg
+                                .success-video-block__video
+                                    img(src="img/success/video-thumb.jpg")
+
+        include ../partials/footer
+
