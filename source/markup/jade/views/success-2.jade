@@ -1,0 +1,26 @@
+extends ../layouts/main
+
+block contents
+
+    .page.success-page
+        include ../partials/header
+
+        .main.success-page-layout
+            .main-wrapper
+                .success.success--1
+                    .success-video
+                        .success-video__col.success-video__col--1
+                            p.title-7.success-video-title Отличное решение!<br class="br-lg"> Остался всего один шаг!
+                            p.subtitle-4.success-video-subtitle Вам на почту пришло письмо с ссылкой для подтверждения вашего e-mail - просто нажмите на нее.
+                            p.text-11.success-video-text Это сделано с целью защиты Вашей почты, что бы никто не смог подписать Вас на мою рассылку без Вашего ведома 🙂
+                            p.subtitle-4.success-video-outro-text
+                                | Если письмо не придет на почту в течении 15 минут - <span class="color-bright-sun">проверьте папку СПАМ</span>, а если ее там нет - сообщите пожалуйста мне в facebook
+                                br
+                                br
+                                a(href="www.facebook.com/anton.petrenko.71" target="_blank") www.facebook.com/anton.petrenko.71
+                        .success-video__col.success-video__col--2
+                            .success-video-dummy
+                                .success-video-dummy__img
+
+        include ../partials/footer
+

@@ -1,0 +1,226 @@
+.success-page {
+
+    .main-wrapper {
+        @include desktop-only {
+            max-width: 1324px;
+        }
+    }
+}
+
+.success-page-layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url(../img/success/bg.svg) no-repeat center, #4949B7;
+    color: #FFFFFF;
+    @include tablet {
+        background: url(../img/success/bg-tablet.svg) no-repeat right bottom -220px, #4949B7;
+    }
+    @include mobile {
+        background: #4949B7;
+    }
+
+    > .main-wrapper {
+        width: 100%;
+    }
+}
+
+.success {
+    padding: 80px 0 105px;
+    @include laptop {
+        padding: 44px 0;
+    }
+    @include tablet {
+        padding: 24px 0 30px;
+    }
+    @include mobile {
+        padding: 21px 0 52px;
+    }
+}
+
+.success-video {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include tablet-mobile {
+        flex-direction: column;
+    }
+
+    &__col {
+
+        &.success-video__col--1 {
+            flex: 1;
+            max-width: 573px;
+            margin-right: 20px;
+            @include tablet-mobile {
+                flex: initial;
+                max-width: 100%;
+            }
+            @include tablet {
+                margin: 0 0 30px;
+            }
+            @include mobile {
+                margin: 0 0 34px;
+            }
+        }
+        &.success-video__col--2 {
+            width: 616px;
+            @include tablet-mobile {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.success-video-title {
+
+}
+.success-video-subtitle {
+    margin-top: 21px;
+    @include tablet {
+        margin-top: 9px;
+    }
+    @include mobile {
+        margin-top: 11px;
+    }
+    &:first-child {
+        margin-top: 0;
+    }
+}
+.success-video-text {
+    margin-top: 30px;
+    @include tablet {
+        margin-top: 13px;
+    }
+    @include mobile {
+        margin-top: 10px;
+    }
+    &:first-child {
+        margin-top: 0;
+    }
+}
+.success-video-outro-text {
+    margin-top: 80px;
+    @include tablet {
+        margin-top: 11px;
+    }
+    @include mobile {
+        margin-top: 17px;
+    }
+    &:first-child {
+        margin-top: 0;
+    }
+}
+
+.success-video-block {
+    width: 616px;
+    margin: 0 auto;
+    @include tablet {
+        width: 536px;
+    }
+    @include mobile {
+        width: 340px;
+    }
+
+    &__video {
+        width: 100%;
+        height: 315px;
+        border-radius: 23px;
+        filter: drop-shadow(0px 11.4741px 68.8444px rgba(8, 24, 43, 0.31));
+        @include tablet {
+            height: 274px;
+        }
+        @include mobile {
+            height: 174px;
+            border-radius: 15px;
+        }
+
+        img, iframe {
+            width: 100%;
+            height: 100%;
+            border-radius: 23px;
+            @include mobile {
+                border-radius: 23px;
+            }
+        }
+        img {
+            object-fit: cover;
+        }
+    }
+    &__author {
+        width: 290px;
+        display: flex;
+        align-items: center;
+        margin: 15px 0 0 auto;
+        @include tablet {
+            margin-top: 30px;
+        }
+
+        &_photo {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            object-fit: contain;
+        }
+        &_content {
+            flex: 1;
+            text-align: right;
+            margin-left: 10px;
+        }
+
+        &_title {
+            font-weight: 500;
+            font-size: 17px;
+            line-height: 133%;
+            @include mobile {
+                font-size: 15px;
+            }
+        }
+        &_name {
+            font-style: italic;
+            font-size: 15px;
+            line-height: 150%;
+            margin-top: 5px;
+            @include mobile {
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+.success-video-dummy {
+    height: 644px;
+    position: relative;
+    @include laptop {
+        height: 432px;
+    }
+    @include tablet {
+        height: 384px;
+    }
+    @include mobile {
+        height: 240px;
+    }
+
+    &__img {
+        width: 827px;
+        height: 100%;
+        background: url(../img/success/video-dummy.svg) no-repeat center / contain;
+        position: absolute;
+        top: 0;
+        right: -60px;
+        @include laptop {
+            width: 554px;
+            right: 0;
+        }
+        @include tablet-mobile {
+            position: static;
+            margin: 0 auto;
+        }
+        @include tablet {
+            width: 492px;
+        }
+        @include mobile {
+            width: 309px;
+        }
+    }
+}
