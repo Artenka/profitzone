@@ -101,6 +101,15 @@
         line-height: 107%;
     }
 }
+.title-8 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 183%;
+    @include mobile {
+        font-size: 20px;
+        line-height: 209%;
+    }
+}
 
 .subtitle {
     font-weight: 600;
@@ -143,6 +152,20 @@
     a {
         color: #FFCC46;
     }
+}
+.subtitle-5 {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 100%;
+    @include mobile {
+        font-size: 12px;
+        line-height: 150%;
+    }
+}
+.subtitle-6 {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 120%;
 }
 
 .text-1 {
@@ -214,6 +237,30 @@
     @include mobile {
         font-size: 14px;
         line-height: 143%;
+    }
+}
+.text-12 {
+    font-size: 16px;
+    line-height: 137%;
+    @include mobile {
+        font-size: 14px;
+        line-height: 143%;
+    }
+}
+.text-13 {
+    font-size: 11px;
+    line-height: 200%;
+    @include mobile {
+        font-size: 12px;
+        line-height: 150%;
+    }
+}
+.text-14 {
+    font-size: 14px;
+    line-height: 160%;
+    @include mobile {
+        font-size: 12px;
+        line-height: 150%;
     }
 }
 

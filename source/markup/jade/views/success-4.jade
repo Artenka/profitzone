@@ -1,0 +1,57 @@
+extends ../layouts/main
+
+block contents
+
+    .page.success-page
+        include ../partials/header
+
+        .main.success-page-layout
+            .main-wrapper
+                .success.success--4
+                    .success-so-about
+                        p.title-7.success-so-about__title Остался всего один шаг!
+                        p.text-12.success-so-about__text
+                            b Вам на почту пришло письмо с ссылкой для подтверждения доступа к курсу - просто нажмите не нее
+                            br
+                            br.br-md-sm
+                            | Это сделано с целью защиты Вашей почты, что бы никто не смог подписать Вас на мою рассылку без Вашего ведома 🙂
+                            br
+                            br
+                            b Если письмо не придет на почту в течении 15 минут - <span class="color-bright-sun">проверьте папку СПАМ</span>, а если<br class="br-lg"> ее там нет - сообщите пожалуйста мне на почту anton.petrenko@profit-zone.com
+
+                    .success-so-box-layout
+                        .success-so-box-list
+                            .success-so-box-item
+                                .success-so-box-item__icon
+                                    img(src="img/success/so-box-item-1.svg").success-so-box-item__icon_img
+                                p.success-so-box-item__text Демонстрация + обучение пошаговому алгоритму
+                            .success-so-box-item
+                                .success-so-box-item__icon
+                                    img(src="img/success/so-box-item-2.svg").success-so-box-item__icon_img
+                                p.success-so-box-item__text По цене чашки кофе
+                            .success-so-box-item
+                                .success-so-box-item__icon
+                                    img(src="img/success/so-box-item-3.svg").success-so-box-item__icon_img
+                                p.success-so-box-item__text 60 минут практического материала
+
+                        .success-so-box-prices
+                            p.success-so-box-prices__text workshop
+                            .success-so-box-prices__price-old 40<span class="success-so-box-prices__price-old_currency">$</span>
+                            .success-so-box-prices__price 1<span class="success-so-box-prices__price_currency">$</span>
+
+                        .success-so-box
+                            p.text-center.title-8.success-so-box__title И только здесь и сейчас! 😉
+                            p.text-center.text-14.success-so-box__text-1
+                                | Вы можете получить в дополнение к курсу всего за <span class="subtitle-5">1$</span>
+                                br
+                                br.br-md-sm
+                                b “Практический WORKSHOP по подбору ниши<br class="br-sm"> для Вашей книги”
+                            p.text-center.text-13.success-so-box__text-2 (я “сливаю” ниши, в которых публикуюсь сам), и много другой инсайдерской информации
+                            .success-so-box__btn-layout
+                                button(type="button").btn.success-so-box__btn беру workshop за 1$
+
+                        p.text-center.text-13.success-so-box-disclaimer *приблизительное время прохождения 60 минут
+
+
+        include ../partials/footer
+
