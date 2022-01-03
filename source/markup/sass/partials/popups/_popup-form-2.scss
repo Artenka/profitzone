@@ -1,0 +1,109 @@
+.popup.popup-form-2 {
+    width: 896px;
+    background: #4949B7;
+    border-radius: 20px;
+    color: #FFFFFF;
+    padding: 54px 76px 59px 464px;
+    position: relative;
+    @include tablet {
+        width: 704px;
+        padding: 54px 53px 59px 295px;
+    }
+    @include mobile {
+        width: 340px;
+        text-align: center;
+        padding: 32px 22px 37px;
+    }
+
+    .popup-form-2__img {
+        width: 971px;
+        height: 590px;
+        background: url(../img/common/form-2-rocket.svg) no-repeat center / contain;
+        position: absolute;
+        bottom: 0;
+        left: -74px;
+        @include tablet {
+            width: 704px;
+            height: 520px;
+            background-image: url(../img/common/form-2-rocket-tablet.svg);
+            left: 0;
+        }
+        @include mobile {
+            display: none;
+        }
+
+        &.popup-form-2__img--2 {
+            width: 462px;
+            height: 537px;
+            background-image: url(../img/common/form-2-baloon.svg);
+            bottom: 37px;
+            left: -45px;
+            @include tablet {
+                bottom: 16px;
+                left: -126px;
+            }
+        }
+    }
+
+    .popup-form-2__title {
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 119%;
+        @include mobile {
+            font-size: 24px;
+            line-height: 125%;
+        }
+    }
+    .popup-form-2__text {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 167%;
+        margin-top: 10px;
+        @include mobile {
+            font-size: 14px;
+            line-height: 214%;
+        }
+    }
+    .popup-form-2__text-2 {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 162%;
+        margin-top: 8px;
+        @include mobile {
+            font-size: 14px;
+            line-height: 143%;
+            margin-top: 12px;
+        }
+    }
+
+    .form.popup-form-2__form {
+        margin-top: 40px;
+        @include mobile {
+            margin-top: 20px;
+        }
+
+        .form__submit {
+            margin-top: 40px;
+            @include mobile {
+                margin-top: 30px;
+            }
+        }
+    }
+
+    &.popup-form-2--2 {
+
+        .form.popup-form-2__form {
+            margin-top: 20px;
+            @include mobile {
+                margin-top: 18px;
+            }
+
+            .form__submit {
+                margin-top: 24px;
+                @include mobile {
+                    margin-top: 27px;
+                }
+            }
+        }
+    }
+}

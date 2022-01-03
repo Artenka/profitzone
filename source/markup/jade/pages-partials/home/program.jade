@@ -34,7 +34,7 @@
                 button(type="button" data-item="1").subtitle-3.home-program-item__tabs-btn.home-program-item__tabs-btn--active Базовый
                 button(type="button" data-item="2").subtitle-3.home-program-item__tabs-btn AMS формула
                 button(type="button" data-item="3").subtitle-3.home-program-item__tabs-btn Virtual Amazon Assistant
-              a(href="#").btn.home-program-item__btn Узнать стоимость 3в1
+              button(type="button" onclick="hidePopup(); showPopup('#popup-form-2-2')").popup-link.btn.home-program-item__btn Узнать стоимость 3в1
             .home-program-item__col.home-program-item__col--2
               .home-program-item__tabs
                 div(data-item="1").home-program-item__tab.home-program-item__tab--active
@@ -115,7 +115,7 @@
 
       .home-timer-block
         p.home-timer-block__title-1 Выберите востребованную интернет-профессию, на которую всегда есть спрос и успейте занять место на потоке с <span class="color-portage">выгодой до $1000</span>
-        a(href="#").btn.btn--bordered.home-timer-block__btn получить промокод
+        button(type="button" onclick="showPopup('#popup-form')").popup-link.btn.btn--bordered.home-timer-block__btn получить промокод
         p.home-timer-block__title-2 Воспользоваться промокодом можно только до 01.01
 
         .home-timer

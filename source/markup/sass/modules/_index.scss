@@ -278,24 +278,22 @@ b, strong {
     font-weight: 700;
 }
 
-input, textarea, select, .input, .textarea, .select {
+.input, .textarea, .select {
     width: 100%;
     display: block;
     border: none;
-    color: #000000;
-    font-family: AvenirNextCyr, sans-serif;
-    font-size: 18px;
+    background: #3E3E9C;
+    border-radius: 100px;
+    color: #fff;
+    font-family: Montserrat, sans-serif;
     font-weight: 500;
-    line-height: 22px;
-    letter-spacing: -0.22px;
-    padding: 22px 57px 25px;
+    font-size: 14px;
+    line-height: 214%;
+    padding: 17px 33px;
     outline: none;
     transition: 0.5s;
-    @include mobile {
-        font-size: 12px;
-        line-height: 15px;
-        letter-spacing: -0.15px;
-        padding: 22px 23px;
+    &::placeholder {
+        color: rgba(255,255,255,0.7);
     }
 }
 
