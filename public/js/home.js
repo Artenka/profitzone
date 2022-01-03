@@ -2,6 +2,20 @@ $(function() {
     // program content tabs
     changeTabs('home-program-item__tabs-btn','home-program-item__tab');
 
+    // program popup tabs
+    changeTabs('package-tab','package-content-tab');
+
+    // module popup tabs
+    changeTabs('module-tab','module-content-tab');
+
+    // promo countdown
+    $(".countdown-promo").countdown('2022/01/05', function (event) {
+        var totalHours = event.offset.totalDays * 24 + event.offset.hours;
+        $(this).html(event.strftime('<li>' + totalHours + '</li><li>%M</li><li>%S</li>'));
+    }).on('finish.countdown', function (event) {
+        console.log('promo offer finished');
+    });
+
     // reviews slider
     $('.home-reviews-slider').slick({
         infinite: true,

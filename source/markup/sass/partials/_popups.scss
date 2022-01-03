@@ -86,6 +86,16 @@
             }
         }
     }
+
+    &.popup-tabs {
+        width: 964px;
+        @include tablet {
+            width: 704px;
+        }
+        @include mobile {
+            width: 340px;
+        }
+    }
 }
 
 .popup-slider {
