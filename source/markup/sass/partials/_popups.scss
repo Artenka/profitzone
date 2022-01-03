@@ -1,0 +1,183 @@
+.popup-layout {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: rgba(25, 30, 43, 0.85);
+    backdrop-filter: blur(30px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 102;
+}
+
+.popup-scrollarea {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+    overflow: auto;
+    position: relative;
+    z-index: 3;
+    @include mobile {
+        display: block;
+        padding: 80px 0 40px;
+    }
+}
+
+.popup-close {
+    width: 30px;
+    height: 30px;
+    background: url(../img/common/close-30.svg) no-repeat center / contain;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: -75px;
+    z-index: 103;
+    @include full-hd {
+        top: -108px;
+        right: -175px;
+    }
+    @include tablet-mobile {
+        right: 0;
+    }
+    @include tablet {
+        top: -80px;
+    }
+    @include mobile {
+        width: 22px;
+        height: 22px;
+        top: -60px;
+    }
+}
+
+.popup {
+    width: 762px;
+    background: transparent;
+    margin: 0 auto;
+    position: relative;
+    z-index: 3;
+    @include mobile {
+        width: 320px;
+    }
+
+    &.popup-video {
+        width: 832px;
+        @include tablet {
+            width: 710px;
+        }
+        @include mobile {
+            width: 340px;
+        }
+
+        .popup-video__video {
+            padding-bottom: 56%;
+            position: relative;
+
+            iframe {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+    }
+}
+
+.popup-slider {
+    width: 100%;
+    max-width: 762px;
+    margin: 0 auto;
+    @include tablet {
+        padding-bottom: 150px;
+    }
+    @include mobile {
+        padding-bottom: 145px;
+    }
+
+    .slick-arrow {
+        width: 76px;
+        height: 76px;
+        background: no-repeat center, #E8EFF9;
+        border-radius: 21px;
+        font-size: 0;
+        position: absolute;
+        top: calc(50% - 38px);
+        @include tablet-mobile {
+            top: auto;
+            bottom: 0;
+        }
+        @include mobile {
+            width: 70px;
+            height: 70px;
+            border-radius: 19px;
+        }
+        &:hover {
+            @include desktop-only {
+                background-color: #FF9900;
+            }
+        }
+
+        &.slick-prev {
+            background-image: url(../img/home/reviews/arrow-left-mobile.svg);
+            left: -250px;
+            @include tablet {
+                left: calc(50% - 183px);
+            }
+            @include mobile {
+                left: 0;
+            }
+            &:hover {
+                @include desktop-only {
+                    background-image: url(../img/home/reviews/arrow-left-mobile-hover.svg);
+                }
+            }
+        }
+        &.slick-next {
+            background-image: url(../img/home/reviews/arrow-right-mobile.svg);
+            right: -250px;
+            @include tablet {
+                right: calc(50% - 183px);
+            }
+            @include mobile {
+                right: 0;
+            }
+            &:hover {
+                @include desktop-only {
+                    background-image: url(../img/home/reviews/arrow-right-mobile-hover.svg);
+                }
+            }
+        }
+    }
+}
+
+.popup-slide {
+
+}
+
+.popup-slide-inner {
+
+    img, iframe {
+        display: block;
+        width: 100%;
+    }
+    img {
+        height: auto;
+    }
+
+    &__iframe {
+        padding-bottom: 56%;
+        position: relative;
+
+        iframe {
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+}

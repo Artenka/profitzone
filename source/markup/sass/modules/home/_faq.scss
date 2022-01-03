@@ -17,6 +17,7 @@
 .home-faq-video {
     border-radius: 27px;
     margin: 40px auto 0;
+    cursor: pointer;
     @include mobile {
         border-radius: 11px;
         margin-top: 30px;

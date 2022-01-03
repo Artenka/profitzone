@@ -26,6 +26,12 @@
 	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='$from-color', EndColorStr='$to-color')";
 }
 
+@mixin full-hd {
+	@media (min-width: #{$lg}) {
+		@content;
+	}
+}
+
 @mixin desktop-only {
 	@media (min-width: #{$md}) {
 		@content;

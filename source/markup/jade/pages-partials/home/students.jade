@@ -7,7 +7,7 @@
 
       .home-students-slider-layout
         .home-students-slider-decor
-        .home-students-slider
+        .home-students-slider-nav.home-students-slider
           .home-students-slide
             .home-students-info.color-white
               .home-students-info__about
@@ -54,16 +54,16 @@
                     p.home-students-info__position Студентка курса Basic
                   img(src="img/home/students/avatar-1.png" alt="avatar").home-students-info__about_photo
 
-      .home-students-video-slider
+      .home-students-slider-nav.home-students-video-slider
         .home-students-video-slide
-          .home-students-video
+          .popup-link.home-students-video(onclick="showPopup('#popup-students'); $('.popup-slider-students').slick('reinit');")
             img(src="img/home/students/video-1.jpg").home-students-video__thumb
         .home-students-video-slide
-          .home-students-video
+          .popup-link.home-students-video(onclick="showPopup('#popup-students'); $('.popup-slider-students').slick('reinit');")
             img(src="img/home/students/video-1.jpg").home-students-video__thumb
         .home-students-video-slide
-          .home-students-video
+          .popup-link.home-students-video(onclick="showPopup('#popup-students'); $('.popup-slider-students').slick('reinit');")
             img(src="img/home/students/video-1.jpg").home-students-video__thumb
 
       .home-students-btn-layout.text-center
-        a(href="#").btn.home-students-btn Записаться на обучение
+        a(href="#program").link-smooth.btn.home-students-btn Записаться на обучение

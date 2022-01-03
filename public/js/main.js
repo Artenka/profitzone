@@ -15,7 +15,7 @@ $(function () {
         e.stopPropagation();
     });
 
-    $('.popup__close').click(function () {
+    $('.popup-close').click(function () {
         hidePopup();
     });
 
@@ -59,9 +59,13 @@ function hidePopup() {
     $('.popup-video').find('iframe').remove();
 }
 
-function showVideoPopup(videoId) {
+function showVideoPopup(videoId, videoType) {
     showPopup('#popup-video');
-    $('.popup-video .popup-video__video').html('').append('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/' + videoId + '?rel=0&amp&autoplay=1;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>');
+    if (videoType === 'vimeo') {
+        $('.popup-video .popup-video__video').html('').append('<iframe width="100%" height="100%" src="https://player.vimeo.com/video/' + videoId + '?autoplay=1&title=0&byline=0&portrait=0&badge=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>');
+    } else {
+        $('.popup-video .popup-video__video').html('').append('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/' + videoId + '?rel=0&amp&autoplay=1;controls=0&showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>');
+    }
 }
 
 function changeTabs(tabClass, contentClass) {

@@ -11,7 +11,9 @@ $(function() {
         centerMode: true,
         variableWidth: true,
         focusOnSelect: true,
+        adaptiveHeight: true,
         centerPadding: 0,
+        asNavFor: '.popup-slider-reviews',
         responsive: [
             {
                 breakpoint: 740,
@@ -23,6 +25,18 @@ $(function() {
         ]
     });
 
+    // popup reviews slider
+    $('.popup-slider-reviews').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
+        centerMode: true,
+        centerPadding: 0,
+        adaptiveHeight: true,
+        asNavFor: '.home-reviews-slider'
+    });
+
     // students slider
     $('.home-students-slider').slick({
         speed: 0,
@@ -30,7 +44,7 @@ $(function() {
         dots: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        asNavFor: '.home-students-video-slider',
+        asNavFor: '.home-students-slider-nav',
         customPaging : function(slider, i) {
             return String(i + 1).padStart(2, '0');
         },
@@ -46,7 +60,19 @@ $(function() {
         centerMode: true,
         variableWidth: true,
         focusOnSelect: true,
-        asNavFor: '.home-students-slider',
+        asNavFor: '.home-students-slider-nav',
+    });
+
+    // popup reviews slider
+    $('.popup-slider-students').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
+        centerMode: true,
+        centerPadding: 0,
+        adaptiveHeight: true,
+        asNavFor: '.home-students-slider-nav'
     });
 
     // faq toggle
