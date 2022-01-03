@@ -11,7 +11,7 @@
             span.home-program-item__title_line
             | Базовый
           p.color-white-07.text-4.home-program-item__text Стартовый пакет материалов для создания бизнеса
-          .home-program-item__plus
+          .popup-link.home-program-item__plus(onclick="selectProgramTab(1); showPopup('#popup-programs')")
         .home-program-item
           p.color-white.home-program-item__title
             span.home-program-item__title_line.home-program-item__title_line--pink
@@ -20,7 +20,7 @@
           ul.home-program-item__ul
             li.color-white.home-program-item__ul_li Базовый
             li.color-white.home-program-item__ul_li AMS формула
-          .home-program-item__plus
+          .popup-link.home-program-item__plus(onclick="selectProgramTab(2); showPopup('#popup-programs')")
           .home-program-item__best The best choice
         .home-program-item.home-program-item--lg
           .home-program-item__header
@@ -134,29 +134,29 @@
 
       .home-program-modules
         .home-program-module-layout
-          .home-program-module
+          .home-program-module.popup-link(onclick="selectModuleTab(1); showPopup('#popup-modules')")
             .home-program-module__main
               p.color-white.subtitle-3.home-program-module__title WORKSHOP
               p.color-white-07.text-7.home-program-module__text Все что необходимо знать, чтобы не лажануть с выбором прибыльной темы
             button(type="button").home-program-module__btn
         .home-program-module-layout
-          .home-program-module
+          .home-program-module.popup-link(onclick="selectModuleTab(2); showPopup('#popup-modules')")
             .home-program-module__main
               p.color-white.subtitle-3.home-program-module__title Индивидуальная консультация
               p.color-white-07.text-7.home-program-module__text
                 | 1 час личной консультации<br class="br-lg"> + запись
             button(type="button").home-program-module__btn
         .home-program-module-layout
-          .home-program-module
+          .home-program-module.popup-link(onclick="selectModuleTab(3); showPopup('#popup-modules')")
             .home-program-module__main
-              p.color-white.subtitle-3.home-program-module__title WORKSHOP
+              p.color-white.subtitle-3.home-program-module__title AMS формула
               p.color-white-07.text-7.home-program-module__text
                 | УНИКАЛЬНЫЙ курс по PPC рекламе книг на Amazon, КОТОРОГО НИГДЕ НЕТ
             button(type="button").home-program-module__btn
         .home-program-module-layout
-          .home-program-module
+          .home-program-module.popup-link(onclick="selectModuleTab(4); showPopup('#popup-modules')")
             .home-program-module__main
-              p.color-white.subtitle-3.home-program-module__title WORKSHOP
+              p.color-white.subtitle-3.home-program-module__title Virtual Amazon Assistant
               p.color-white-07.text-7.home-program-module__text получи новую специальность удалённый ассистент на Amazon и зарабатывай онлайн с нуля
             button(type="button").home-program-module__btn
 

@@ -94,3 +94,29 @@ $(function() {
         $(this).toggleClass('home-faq-item--active');
     });
 });
+
+function selectProgramTab(number) {
+    var $tab = $('.package-tab[data-item="' + number + '"]');
+    var $contentTab = $('.package-content-tab[data-item="' + number + '"]');
+
+    if (!$tab.hasClass('package-tab--active')) {
+        $('.package-tab--active').removeClass('package-tab--active');
+        $tab.addClass('package-tab--active');
+
+        $('.package-content-tab--active').removeClass('package-content-tab--active');
+        $contentTab.addClass('package-content-tab--active');
+    }
+}
+
+function selectModuleTab(number) {
+    var $tab = $('.module-tab[data-item="' + number + '"]');
+    var $contentTab = $('.module-content-tab[data-item="' + number + '"]');
+
+    if (!$tab.hasClass('module-tab--active')) {
+        $('.module-tab--active').removeClass('module-tab--active');
+        $tab.addClass('module-tab--active');
+
+        $('.module-content-tab--active').removeClass('module-content-tab--active');
+        $contentTab.addClass('module-content-tab--active');
+    }
+}
