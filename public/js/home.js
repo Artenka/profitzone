@@ -1,3 +1,5 @@
+$ = jQuery.noConflict();
+
 $(function() {
     // program content tabs
     changeTabs('home-program-item__tabs-btn','home-program-item__tab');

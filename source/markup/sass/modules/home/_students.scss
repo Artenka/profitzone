@@ -67,7 +67,7 @@
 .home-students-slider-decor {
     width: 531px;
     height: 538px;
-    background: url(../img/home/students/decor.svg) no-repeat center / contain;
+    background: url(../../img/new_pages/home/students/decor.svg) no-repeat center / contain;
     position: absolute;
     bottom: -1px;
     right: 27px;
@@ -95,7 +95,7 @@
     }
 
     .slick-arrow {
-        width: 59px;
+        width: 109px;
         height: 17px;
         background: no-repeat center / contain;
         font-size: 0;
@@ -112,16 +112,16 @@
         }
 
         &.slick-next {
-            background-image: url(../img/home/students/arrow-right.svg);
-            left: 1116px;
+            background-image: url(../../img/new_pages/home/students/arrow-right.svg);
+            left: 1091px;
             transition: 0.4s;
             @include tablet {
                 left: 677px;
             }
             &:hover {
                 @include desktop-only {
-                    background-image: url(../img/home/students/arrow-right-orange.svg);
-                    left: 1071px;
+                    background-image: url(../../img/new_pages/home/students/arrow-right-orange.svg);
+                    left: 1046px;
                 }
             }
         }

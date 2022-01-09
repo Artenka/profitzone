@@ -32,7 +32,7 @@
     &__left {
         width: calc(50% + 56px);
         border-radius: 20px 0 0 20px;
-        background: url(../img/home/system/bg-left.svg) no-repeat top left / cover, #2E2362;
+        background: url(../../img/new_pages/home/system/bg-left.svg) no-repeat top left / cover, #2E2362;
         padding: 79px 40px 59px 51px;
         @include tablet-mobile {
             width: 100%;
@@ -56,7 +56,7 @@
         &_top {
             flex: 1;
             border-radius: 0 20px 0 0;
-            background: url(../img/home/system/bg-right-top.svg) no-repeat bottom right / cover, #4949B7;
+            background: url(../../img/new_pages/home/system/bg-right-top.svg) no-repeat bottom right / cover, #4949B7;
             padding: 80px 51px 69px 68px;
             @include tablet-mobile {
                 border-radius: 0;

@@ -58,21 +58,21 @@
         content: '';
         width: 171px;
         height: 32px;
-        background: url(../img/home/foreword/arrow-curve-top.svg) no-repeat center / contain;
+        background: url(../../img/new_pages/home/foreword/arrow-curve-top.svg) no-repeat center / contain;
         position: absolute;
         top: -20px;
         right: -103px;
         @include tablet {
             width: 182px;
             height: 34px;
-            background-image: url(../img/home/foreword/arrow-curve-odd-2-tablet.svg);
+            background-image: url(../../img/new_pages/home/foreword/arrow-curve-odd-2-tablet.svg);
             top: 92px;
             left: 246px;
         }
         @include mobile {
             width: 31px;
             height: 172px;
-            background-image: url(../img/home/foreword/arrow-curve-right.svg);
+            background-image: url(../../img/new_pages/home/foreword/arrow-curve-right.svg);
             top: auto;
             bottom: -69px;
             right: 14px;
@@ -86,7 +86,7 @@
             @include tablet {
                 width: 171px;
                 height: 33px;
-                background-image: url(../img/home/foreword/arrow-curve-odd-1-tablet.svg);
+                background-image: url(../../img/new_pages/home/foreword/arrow-curve-odd-1-tablet.svg);
                 top: -20px;
                 left: 251px;
             }
@@ -98,13 +98,13 @@
         }
         &:after {
             content: '';
-            background-image: url(../img/home/foreword/arrow-curve-bottom.svg);
+            background-image: url(../../img/new_pages/home/foreword/arrow-curve-bottom.svg);
             top: 88px;
             right: -101px;
             @include tablet {
                 width: 149px;
                 height: 88px;
-                background-image: url(../img/home/foreword/arrow-curve-even-tablet.svg);
+                background-image: url(../../img/new_pages/home/foreword/arrow-curve-even-tablet.svg);
                 top: 152px;
                 right: auto;
                 left: -145px;
@@ -112,7 +112,7 @@
             @include mobile {
                 width: 28px;
                 height: 172px;
-                background-image: url(../img/home/foreword/arrow-curve-left.svg);
+                background-image: url(../../img/new_pages/home/foreword/arrow-curve-left.svg);
                 top: auto;
                 bottom: -87px;
                 right: auto;

@@ -29,7 +29,7 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    background: url(../img/home/whom/about-circle.svg) no-repeat center / cover;
+    background: url(../../img/new_pages/home/whom/about-circle.svg) no-repeat center / cover;
     position: relative;
     z-index: 2;
     @include tablet-mobile {
@@ -104,19 +104,19 @@
         .home-whom-people-item__img {
             width: 435px;
             height: 215px;
-            background-image: url(../img/home/whom/item-1.svg);
+            background-image: url(../../img/new_pages/home/whom/item-1.svg);
             top: -33px;
             @include tablet {
                 width: 220px;
                 height: 439px;
-                background-image: url(../img/home/whom/item-1-tablet.svg);
+                background-image: url(../../img/new_pages/home/whom/item-1-tablet.svg);
                 top: -450px;
                 left: -76px;
             }
             @include mobile {
                 width: 214px;
                 height: 406px;
-                background-image: url(../img/home/whom/item-1-mobile.svg);
+                background-image: url(../../img/new_pages/home/whom/item-1-mobile.svg);
                 top: -418px;
                 left: -70px;
             }
@@ -137,18 +137,18 @@
         .home-whom-people-item__img {
             width: 609px;
             height: 187px;
-            background-image: url(../img/home/whom/item-2.svg);
+            background-image: url(../../img/new_pages/home/whom/item-2.svg);
             @include tablet {
                 width: 197px;
                 height: 613px;
-                background-image: url(../img/home/whom/item-2-tablet.svg);
+                background-image: url(../../img/new_pages/home/whom/item-2-tablet.svg);
                 top: -625px;
                 left: -53px;
             }
             @include mobile {
                 width: 171px;
                 height: 558px;
-                background-image: url(../img/home/whom/item-2-mobile.svg);
+                background-image: url(../../img/new_pages/home/whom/item-2-mobile.svg);
                 top: -568px;
                 left: -28px;
             }
@@ -169,18 +169,18 @@
         .home-whom-people-item__img {
             width: 591px;
             height: 118px;
-            background-image: url(../img/home/whom/item-3.svg);
+            background-image: url(../../img/new_pages/home/whom/item-3.svg);
             @include tablet {
                 width: 127px;
                 height: 594px;
-                background-image: url(../img/home/whom/item-3-tablet.svg);
+                background-image: url(../../img/new_pages/home/whom/item-3-tablet.svg);
                 top: -606px;
                 left: 17px;
             }
             @include mobile {
                 width: 128px;
                 height: 565px;
-                background-image: url(../img/home/whom/item-3-mobile.svg);
+                background-image: url(../../img/new_pages/home/whom/item-3-mobile.svg);
                 top: -577px;
                 left: 20px;
             }
@@ -201,19 +201,19 @@
         .home-whom-people-item__img {
             width: 581px;
             height: 165px;
-            background-image: url(../img/home/whom/item-4.svg);
+            background-image: url(../../img/new_pages/home/whom/item-4.svg);
             top: -100px;
             @include tablet {
                 width: 173px;
                 height: 584px;
-                background-image: url(../img/home/whom/item-4-tablet.svg);
+                background-image: url(../../img/new_pages/home/whom/item-4-tablet.svg);
                 top: -596px;
                 left: 26px;
             }
             @include mobile {
                 width: 122px;
                 height: 610px;
-                background-image: url(../img/home/whom/item-4-mobile.svg);
+                background-image: url(../../img/new_pages/home/whom/item-4-mobile.svg);
                 top: -622px;
                 left: 30px;
             }
@@ -234,19 +234,19 @@
         .home-whom-people-item__img {
             width: 579px;
             height: 146px;
-            background-image: url(../img/home/whom/item-5.svg);
+            background-image: url(../../img/new_pages/home/whom/item-5.svg);
             top: -82px;
             @include tablet {
                 width: 153px;
                 height: 583px;
-                background-image: url(../img/home/whom/item-5-tablet.svg);
+                background-image: url(../../img/new_pages/home/whom/item-5-tablet.svg);
                 top: -596px;
                 left: 26px;
             }
             @include mobile {
                 width: 179px;
                 height: 553px;
-                background-image: url(../img/home/whom/item-5-mobile.svg);
+                background-image: url(../../img/new_pages/home/whom/item-5-mobile.svg);
                 top: -565px;
                 left: 34px;
             }
@@ -270,7 +270,7 @@
         content: '';
         width: 1195px;
         height: 395px;
-        background: url(../img/home/whom/stairs.svg) no-repeat center / contain;
+        background: url(../../img/new_pages/home/whom/stairs.svg) no-repeat center / contain;
         position: absolute;
         bottom: 0;
         left: calc(50% - 960px);
@@ -285,7 +285,7 @@
         content: '';
         width: 249px;
         height: 191px;
-        background: url(../img/home/whom/running-man.svg) no-repeat center / contain;
+        background: url(../../img/new_pages/home/whom/running-man.svg) no-repeat center / contain;
         position: absolute;
         bottom: 193px;
         left: calc(50% - 87px);

@@ -1,3 +1,5 @@
+$ = jQuery.noConflict();
+
 $(function () {
     // smooth scroll on anchors
     $(document).on('click', '.link-smooth', function (event) {
@@ -50,8 +52,12 @@ $(function () {
     });
 
     // lang switcher
-    $('.lang-switcher').click(function () {
+    $('.lang-switcher').click(function (e) {
+        e.stopPropagation();
         $(this).toggleClass('lang-switcher--active');
+    });
+    $("body").click(function () {
+        $('.lang-switcher').removeClass('lang-switcher--active');
     });
 });
 

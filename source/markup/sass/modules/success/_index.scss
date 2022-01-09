@@ -11,10 +11,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: url(../img/success/bg.svg) no-repeat center, #4949B7;
+    background: url(../../img/new_pages/success/bg.svg) no-repeat center, #4949B7;
     color: #FFFFFF;
     @include tablet {
-        background: url(../img/success/bg-tablet.svg) no-repeat right bottom -220px, #4949B7;
+        background: url(../../img/new_pages/success/bg-tablet.svg) no-repeat right bottom -220px, #4949B7;
     }
     @include mobile {
         background: #4949B7;
@@ -288,7 +288,7 @@
     &__img {
         width: 827px;
         height: 100%;
-        background: url(../img/success/video-dummy.svg) no-repeat center / contain;
+        background: url(../../img/new_pages/success/video-dummy.svg) no-repeat center / contain;
         position: absolute;
         top: 0;
         right: -60px;
@@ -415,7 +415,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-    background: url(../img/success/so-box-rocket.svg) no-repeat center / contain;
+    background: url(../../img/new_pages/success/so-box-rocket.svg) no-repeat center / contain;
     padding: 0 0 48px 10px;
     position: absolute;
     top: -70px;
@@ -469,7 +469,7 @@
             content: '';
             width: 68px;
             height: 68px;
-            background: url(../img/success/price-old-cross.svg) no-repeat center / contain;
+            background: url(../../img/new_pages/success/price-old-cross.svg) no-repeat center / contain;
             position: absolute;
             top: calc(50% - 34px);
             left: calc(50% - 34px);
@@ -522,7 +522,7 @@
     @include desktop-only {
         width: 263px;
         height: 50px;
-        background: url(../img/success/flag-vector.svg) no-repeat center / contain;
+        background: url(../../img/new_pages/success/flag-vector.svg) no-repeat center / contain;
         padding: 3px 30px 3px 6px;
         margin-bottom: 6px;
     }

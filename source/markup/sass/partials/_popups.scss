@@ -34,7 +34,7 @@
 .popup-close {
     width: 30px;
     height: 30px;
-    background: url(../img/common/close-30.svg) no-repeat center / contain;
+    background: url(../../img/new_pages/common/close-30.svg) no-repeat center / contain;
     cursor: pointer;
     position: absolute;
     top: 0;
@@ -136,7 +136,7 @@
         }
 
         &.slick-prev {
-            background-image: url(../img/home/reviews/arrow-left-mobile.svg);
+            background-image: url(../../img/new_pages/home/reviews/arrow-left-mobile.svg);
             left: -250px;
             @include tablet {
                 left: calc(50% - 183px);
@@ -146,12 +146,12 @@
             }
             &:hover {
                 @include desktop-only {
-                    background-image: url(../img/home/reviews/arrow-left-mobile-hover.svg);
+                    background-image: url(../../img/new_pages/home/reviews/arrow-left-mobile-hover.svg);
                 }
             }
         }
         &.slick-next {
-            background-image: url(../img/home/reviews/arrow-right-mobile.svg);
+            background-image: url(../../img/new_pages/home/reviews/arrow-right-mobile.svg);
             right: -250px;
             @include tablet {
                 right: calc(50% - 183px);
@@ -161,7 +161,7 @@
             }
             &:hover {
                 @include desktop-only {
-                    background-image: url(../img/home/reviews/arrow-right-mobile-hover.svg);
+                    background-image: url(../../img/new_pages/home/reviews/arrow-right-mobile-hover.svg);
                 }
             }
         }

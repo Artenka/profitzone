@@ -1,10 +1,10 @@
 .home-intro-section {
-    background: url(../img/home/intro/bg.svg) no-repeat center / cover, #4949B7;
+    background: url(../../img/new_pages/home/intro/bg.svg) no-repeat center / cover, #4949B7;
     @include tablet {
-        background: url(../img/home/intro/bg-tablet.svg) no-repeat center bottom / cover, #4949B7;
+        background: url(../../img/new_pages/home/intro/bg-tablet.svg) no-repeat center bottom / cover, #4949B7;
     }
     @include mobile {
-        background: url(../img/home/intro/bg-mobile.svg) no-repeat center bottom / cover, #4949B7;
+        background: url(../../img/new_pages/home/intro/bg-mobile.svg) no-repeat center bottom / cover, #4949B7;
     }
 }
 
@@ -52,7 +52,7 @@
             content: '';
             width: 18px;
             height: 18px;
-            background: url(../img/common/check-circle.svg) no-repeat center / contain;
+            background: url(../../img/new_pages/common/check-circle.svg) no-repeat center / contain;
             position: absolute;
             top: calc(50% - 9px);
             left: 0;
@@ -89,7 +89,7 @@
 .home-intro-features-item {
     width: 323px;
     min-height: 50px;
-    background: url(../img/home/intro/feature-bg.svg) no-repeat center;
+    background: url(../../img/new_pages/home/intro/feature-bg.svg) no-repeat center;
     display: flex;
     align-items: center;
     padding: 7px 50px 7px 20px;
@@ -97,13 +97,13 @@
     @include tablet {
         width: 253px;
         min-height: 40px;
-        background-image: url(../img/home/intro/feature-bg-tablet.svg);
+        background-image: url(../../img/new_pages/home/intro/feature-bg-tablet.svg);
         padding: 6px 12px 6px 38px;
     }
     @include mobile {
         width: 253px;
         min-height: 40px;
-        background-image: url(../img/home/intro/feature-bg-mobile.svg);
+        background-image: url(../../img/new_pages/home/intro/feature-bg-mobile.svg);
         padding: 6px 30px 6px 12px;
     }
     &:nth-child(2) {

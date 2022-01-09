@@ -1,11 +1,11 @@
 .home-program-section {
-    background: url(../img/home/program/bg.svg) no-repeat center / cover;
+    background: url(../../img/new_pages/home/program/bg.svg) no-repeat center / cover;
     padding: 90px 0 65px;
     @include tablet {
         padding-bottom: 74px;
     }
     @include mobile {
-        background-image: url(../img/home/program/bg-mobile.svg);
+        background-image: url(../../img/new_pages/home/program/bg-mobile.svg);
         padding: 58px 0 42px;
     }
 }
@@ -86,7 +86,7 @@
             }
             &.home-program-item__title_line--plus {
                 width: 30px;
-                background: url(../img/home/program/title-plus.svg) no-repeat center / contain;
+                background: url(../../img/new_pages/home/program/title-plus.svg) no-repeat center / contain;
             }
         }
     }
@@ -126,7 +126,7 @@
                 content: '';
                 width: 20px;
                 height: 20px;
-                background: url(../img/home/program/plus.svg) no-repeat center / contain;
+                background: url(../../img/new_pages/home/program/plus.svg) no-repeat center / contain;
                 position: absolute;
                 bottom: -25px;
                 left: 36px;
@@ -146,7 +146,7 @@
     &__plus {
         width: 99px;
         height: 99px;
-        background: url(../img/home/program/item-plus.svg) no-repeat center / contain;
+        background: url(../../img/new_pages/home/program/item-plus.svg) no-repeat center / contain;
         position: absolute;
         bottom: -2px;
         right: -2px;
@@ -157,14 +157,14 @@
             height: 79px;
         }
         &:hover {
-            background-image: url(../img/home/program/item-plus-hover.svg);
+            background-image: url(../../img/new_pages/home/program/item-plus-hover.svg);
         }
     }
 
     &__best {
         width: 276px;
         height: 276px;
-        background: url(../img/home/program/best-choice.svg) no-repeat center / contain;
+        background: url(../../img/new_pages/home/program/best-choice.svg) no-repeat center / contain;
         font-style: italic;
         font-weight: 800;
         font-size: 20px;
@@ -246,7 +246,7 @@
             content: '';
             width: 18px;
             height: 18px;
-            background: url(../img/home/program/tab-btn-plus.svg) no-repeat center / contain;
+            background: url(../../img/new_pages/home/program/tab-btn-plus.svg) no-repeat center / contain;
             margin-right: 15px;
         }
         &:last-child {
@@ -256,7 +256,7 @@
         &.home-program-item__tabs-btn--active {
             color: #9595EF;
             &:before {
-                background-image: url(../img/home/program/tab-btn-plus-hover.svg);
+                background-image: url(../../img/new_pages/home/program/tab-btn-plus-hover.svg);
             }
         }
     }
@@ -505,7 +505,7 @@
             content: '';
             width: 46px;
             height: 50px;
-            background: url(../img/home/program/module-plus-tablet.svg) no-repeat center / contain;
+            background: url(../../img/new_pages/home/program/module-plus-tablet.svg) no-repeat center / contain;
             position: absolute;
             bottom: -2px;
             right: -2px;
@@ -552,7 +552,7 @@
         width: 68px;
         height: calc(100% + 4px);
         border-radius: 0 20px 20px 0;
-        background: url(../img/home/program/module-arrow.svg) no-repeat center, #FF9900;
+        background: url(../../img/new_pages/home/program/module-arrow.svg) no-repeat center, #FF9900;
         position: absolute;
         top: -2px;
         right: -2px;
@@ -858,7 +858,7 @@
         &:after {
             width: 243px;
             height: 523px;
-            background-image: url(../img/home/program/module-decor-1.svg);
+            background-image: url(../../img/new_pages/home/program/module-decor-1.svg);
             right: -42px;
             @include tablet {
                 width: 68px;
@@ -876,7 +876,7 @@
         &:after {
             width: 278px;
             height: 530px;
-            background-image: url(../img/home/program/module-decor-2.svg);
+            background-image: url(../../img/new_pages/home/program/module-decor-2.svg);
             right: -132px;
             @include tablet {
                 display: none;
@@ -892,7 +892,7 @@
         &:after {
             width: 246px;
             height: 441px;
-            background-image: url(../img/home/program/module-decor-3.svg);
+            background-image: url(../../img/new_pages/home/program/module-decor-3.svg);
             bottom: 53px;
             right: -125px;
             @include tablet {
@@ -912,7 +912,7 @@
         &:after {
             width: 260px;
             height: 496px;
-            background-image: url(../img/home/program/module-decor-4.svg);
+            background-image: url(../../img/new_pages/home/program/module-decor-4.svg);
             right: -129px;
             @include tablet {
                 width: 52px;

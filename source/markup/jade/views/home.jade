@@ -2,6 +2,8 @@ extends ../layouts/main
 
 block contents
 
+  include ../partials/header
+
   .main.home-page
     include ../pages-partials/home/intro
     include ../pages-partials/home/foreword
@@ -28,6 +30,6 @@ block contents
   include ../pages-partials/home/popups/popup-reviews
   include ../pages-partials/home/popups/popup-students
 
-  script(src='js/slick.min.js')
+  script(src='js/slick-2.min.js')
   script(src='js/jquery.countdown.min.js')
   script(src='js/home.js')

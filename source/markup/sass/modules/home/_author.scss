@@ -102,7 +102,7 @@
 
 .home-author-quote {
     width: 724px;
-    background: url(../img/home/author/quote.svg) no-repeat center left 76px, #121D54;
+    background: url(../../img/new_pages/home/author/quote.svg) no-repeat center left 76px, #121D54;
     font-size: 14px;
     line-height: 200%;
     color: #FFFFFF;
@@ -113,14 +113,14 @@
     z-index: 2;
     @include tablet {
         width: 445px;
-        background: url(../img/home/author/quote.svg) no-repeat left 32px center / 68px, #121D54;
+        background: url(../../img/new_pages/home/author/quote.svg) no-repeat left 32px center / 68px, #121D54;
         padding: 35px 22px 35px 129px;
         top: 35px;
         left: 260px;
     }
     @include mobile {
         width: 100vw;
-        background: url(../img/home/author/quote.svg) no-repeat top 23px left 20px / 36px, #121D54;
+        background: url(../../img/new_pages/home/author/quote.svg) no-repeat top 23px left 20px / 36px, #121D54;
         line-height: 143%;
         padding: 72px 20px 15px;
         margin-top: 27px;

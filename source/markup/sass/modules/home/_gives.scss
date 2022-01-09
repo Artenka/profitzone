@@ -51,11 +51,11 @@
         &:before {
             width: 406px;
             height: 267px;
-            background-image: url(../img/home/gives/item-1.svg);
+            background-image: url(../../img/new_pages/home/gives/item-1.svg);
             top: -40px;
             left: -556px;
             @include tablet-mobile {
-                background-image: url(../img/home/gives/item-1-tablet.svg);
+                background-image: url(../../img/new_pages/home/gives/item-1-tablet.svg);
             }
             @include tablet {
                 width: 252px;
@@ -75,11 +75,11 @@
         &:before {
             width: 488px;
             height: 336px;
-            background-image: url(../img/home/gives/item-2.svg);
+            background-image: url(../../img/new_pages/home/gives/item-2.svg);
             top: -96px;
             left: 631px;
             @include tablet-mobile {
-                background-image: url(../img/home/gives/item-2-tablet.svg);
+                background-image: url(../../img/new_pages/home/gives/item-2-tablet.svg);
             }
             @include tablet {
                 width: 271px;

@@ -42,7 +42,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background: url(../img/home/reviews/number-romb.svg) no-repeat center / contain;
+        background: url(../../img/new_pages/home/reviews/number-romb.svg) no-repeat center / contain;
         font-weight: 800;
         font-size: 24px;
         line-height: 140%;
@@ -122,30 +122,30 @@
         }
 
         &.slick-prev {
-            background: url(../img/home/reviews/arrow-left.svg) no-repeat center right 25px, #121D54;
+            background: url(../../img/new_pages/home/reviews/arrow-left.svg) no-repeat center right 25px, #121D54;
             left: calc(50% - 50vw - 240px);
             @include mobile {
-                background: url(../img/home/reviews/arrow-left-mobile.svg) no-repeat center, #E8EFF9;
+                background: url(../../img/new_pages/home/reviews/arrow-left-mobile.svg) no-repeat center, #E8EFF9;
                 left: calc(50% - 100px);
             }
             &:hover {
-                background: url(../img/home/reviews/arrow-left-hover.svg) no-repeat center right -25px, #FF9900;
+                background: url(../../img/new_pages/home/reviews/arrow-left-hover.svg) no-repeat center right -25px, #FF9900;
                 @include mobile {
-                    background: url(../img/home/reviews/arrow-left-mobile-hover.svg) no-repeat center, #FF9900;
+                    background: url(../../img/new_pages/home/reviews/arrow-left-mobile-hover.svg) no-repeat center, #FF9900;
                 }
             }
         }
         &.slick-next {
-            background: url(../img/home/reviews/arrow-right.svg) no-repeat center left 25px, #121D54;
+            background: url(../../img/new_pages/home/reviews/arrow-right.svg) no-repeat center left 25px, #121D54;
             right: calc(50% - 50vw - 240px);
             @include mobile {
-                background: url(../img/home/reviews/arrow-right-mobile.svg) no-repeat center, #E8EFF9;
+                background: url(../../img/new_pages/home/reviews/arrow-right-mobile.svg) no-repeat center, #E8EFF9;
                 right: calc(50% - 100px);
             }
             &:hover {
-                background: url(../img/home/reviews/arrow-right-hover.svg) no-repeat center left -25px, #FF9900;
+                background: url(../../img/new_pages/home/reviews/arrow-right-hover.svg) no-repeat center left -25px, #FF9900;
                 @include mobile {
-                    background: url(../img/home/reviews/arrow-right-mobile-hover.svg) no-repeat center, #FF9900;
+                    background: url(../../img/new_pages/home/reviews/arrow-right-mobile-hover.svg) no-repeat center, #FF9900;
                 }
             }
         }
