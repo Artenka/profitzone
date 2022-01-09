@@ -115,7 +115,7 @@
 
       .home-timer-block
         p.home-timer-block__title-1 Выберите востребованную интернет-профессию, на которую всегда есть спрос и успейте занять место на потоке с <span class="color-portage">выгодой до $1000</span>
-        button(type="button" onclick="showPopup('#popup-form')").popup-link.btn.btn--bordered.home-timer-block__btn получить промокод
+        button(type="button" onclick="showPopup('#popup-form')").popup-link.btn.home-timer-block__btn получить промокод
         p.home-timer-block__title-2 Воспользоваться промокодом можно только до 01.01
 
         .home-timer
@@ -133,32 +133,28 @@
         p.color-white.section-title <span class="color-blue-violet">Отдельные модули</span> по книжному бизнесу
 
       .home-program-modules
-        .home-program-module-layout
-          .home-program-module.popup-link(onclick="selectModuleTab(1); showPopup('#popup-modules')")
-            .home-program-module__main
-              p.color-white.subtitle-3.home-program-module__title WORKSHOP
-              p.color-white-07.text-7.home-program-module__text Все что необходимо знать, чтобы не лажануть с выбором прибыльной темы
-            button(type="button").home-program-module__btn
-        .home-program-module-layout
-          .home-program-module.popup-link(onclick="selectModuleTab(2); showPopup('#popup-modules')")
-            .home-program-module__main
-              p.color-white.subtitle-3.home-program-module__title Индивидуальная консультация
-              p.color-white-07.text-7.home-program-module__text
-                | 1 час личной консультации<br class="br-lg"> + запись
-            button(type="button").home-program-module__btn
-        .home-program-module-layout
-          .home-program-module.popup-link(onclick="selectModuleTab(3); showPopup('#popup-modules')")
-            .home-program-module__main
-              p.color-white.subtitle-3.home-program-module__title AMS формула
-              p.color-white-07.text-7.home-program-module__text
-                | УНИКАЛЬНЫЙ курс по PPC рекламе книг на Amazon, КОТОРОГО НИГДЕ НЕТ
-            button(type="button").home-program-module__btn
-        .home-program-module-layout
-          .home-program-module.popup-link(onclick="selectModuleTab(4); showPopup('#popup-modules')")
-            .home-program-module__main
-              p.color-white.subtitle-3.home-program-module__title Virtual Amazon Assistant
-              p.color-white-07.text-7.home-program-module__text получи новую специальность удалённый ассистент на Amazon и зарабатывай онлайн с нуля
-            button(type="button").home-program-module__btn
+        .home-program-module.popup-link(onclick="selectModuleTab(1); showPopup('#popup-modules')")
+          .home-program-module__main
+            p.color-white.subtitle-3.home-program-module__title WORKSHOP
+            p.color-white-07.text-7.home-program-module__text Все что необходимо знать, чтобы не лажануть с выбором прибыльной темы
+          button(type="button").home-program-module__btn
+        .home-program-module.popup-link(onclick="selectModuleTab(2); showPopup('#popup-modules')")
+          .home-program-module__main
+            p.color-white.subtitle-3.home-program-module__title Индивидуальная консультация
+            p.color-white-07.text-7.home-program-module__text
+              | 1 час личной консультации<br class="br-lg"> + запись
+          button(type="button").home-program-module__btn
+        .home-program-module.popup-link(onclick="selectModuleTab(3); showPopup('#popup-modules')")
+          .home-program-module__main
+            p.color-white.subtitle-3.home-program-module__title AMS формула
+            p.color-white-07.text-7.home-program-module__text
+              | УНИКАЛЬНЫЙ курс по PPC рекламе книг на Amazon, КОТОРОГО НИГДЕ НЕТ
+          button(type="button").home-program-module__btn
+        .home-program-module.popup-link(onclick="selectModuleTab(4); showPopup('#popup-modules')")
+          .home-program-module__main
+            p.color-white.subtitle-3.home-program-module__title Virtual Amazon Assistant
+            p.color-white-07.text-7.home-program-module__text получи новую специальность удалённый ассистент на Amazon и зарабатывай онлайн с нуля
+          button(type="button").home-program-module__btn
 
       .color-white.home-program-installment
         p.title-6.home-program-installment__title <b>Рассрочка!</b> На любой выбранный пакет вы можете оформить рассрочку.

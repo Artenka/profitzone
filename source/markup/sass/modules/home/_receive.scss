@@ -88,21 +88,30 @@
     }
 
     &__title {
+        display: flex;
+        align-items: center;
         font-weight: bold;
         font-size: 26px;
         line-height: 100%;
         @include mobile {
+            justify-content: center;
             font-size: 22px;
         }
 
         &_emoji {
+            width: 38px;
+            height: 39px;
+            display: inline-block;
+            background: url(../img/common/emoji/fire.png) no-repeat center / contain;
             font-weight: 800;
             font-size: 38px;
             line-height: 110%;
-            margin-right: 7px;
+            margin: 0 7px 0 0;
             @include mobile {
+                width: 31px;
+                height: 31px;
                 font-size: 30px;
-                margin-right: 6px;
+                margin: -4px 6px 0 0;
             }
         }
     }

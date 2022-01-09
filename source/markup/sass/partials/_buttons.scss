@@ -13,6 +13,7 @@
     text-align: center;
     padding: 21px 37px;
     transition: 0.4s;
+    cursor: pointer;
     @include mobile {
         width: 100%;
         font-size: 12px;
@@ -20,8 +21,9 @@
     }
     &:hover {
         @include desktop-only {
+            border-color: #F73E91;
+            background: #F73E91;
             color: #fff;
-            transform: scale(1.03);
         }
     }
 

@@ -114,8 +114,15 @@
         &.slick-next {
             background-image: url(../img/home/students/arrow-right.svg);
             left: 1116px;
+            transition: 0.4s;
             @include tablet {
                 left: 677px;
+            }
+            &:hover {
+                @include desktop-only {
+                    background-image: url(../img/home/students/arrow-right-orange.svg);
+                    left: 1071px;
+                }
             }
         }
     }

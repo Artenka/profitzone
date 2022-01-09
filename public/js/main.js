@@ -37,8 +37,12 @@ $(function () {
     });
 
     // header submenu toggle
-    $('.main-header-burger').click(function () {
+    $('.main-header-burger').click(function (e) {
+        e.stopPropagation();
         $(this).toggleClass('main-header-burger--active burger--active');
+    });
+    $("body").click(function () {
+        $('.main-header-burger').removeClass('main-header-burger--active burger--active');
     });
     $('.main-header-submenu__close').click(function (e) {
         e.stopPropagation();

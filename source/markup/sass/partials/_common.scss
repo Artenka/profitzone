@@ -130,11 +130,8 @@
 }
 .subtitle-3 {
     font-weight: 800;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 160%;
-    @include mobile {
-        font-size: 16px;
-    }
 }
 .subtitle-4 {
     font-weight: bold;
@@ -367,7 +364,7 @@
         z-index: 5;
 
         &_item {
-            margin-bottom: 6px;
+            display: block;
 
             &:last-child {
                 margin-bottom: 0;
@@ -416,7 +413,7 @@
         content: '';
         width: 133px;
         height: 208px;
-        background: url(../img/common/gift.svg) no-repeat center / contain;
+        background: url(../img/common/gift-2.svg) no-repeat center / contain;
         position: absolute;
         bottom: 7px;
         left: 51px;
@@ -482,5 +479,22 @@
         height: 330px;
         top: calc(50% - 165px);
         left: calc(50% - 165px);
+    }
+}
+
+.play-btn {
+    width: 62px;
+    height: 71px;
+    background: url(../img/common/play.svg) no-repeat center / contain;
+    cursor: pointer;
+    position: absolute;
+    top: calc(50% - 35px);
+    left: calc(50% - 31px);
+    z-index: 2;
+    @include mobile {
+        width: 35px;
+        height: 39px;
+        top: calc(50% - 17px);
+        left: calc(50% - 19px);
     }
 }
