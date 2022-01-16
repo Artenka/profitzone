@@ -99,19 +99,19 @@
         }
 
         &_emoji {
-            width: 38px;
-            height: 39px;
-            display: inline-block;
-            background: url(../../img/new_pages/common/emoji/fire.png) no-repeat center / contain;
+            //width: 38px;
+            //height: 39px;
+            //display: inline-block;
+            //background: url(../../img/new_pages/common/emoji/fire.png) no-repeat center / contain;
             font-weight: 800;
             font-size: 38px;
             line-height: 110%;
             margin: 0 7px 0 0;
             @include mobile {
-                width: 31px;
-                height: 31px;
+                //width: 31px;
+                //height: 31px;
                 font-size: 30px;
-                margin: -4px 6px 0 0;
+                margin: 0 6px 0 0;
             }
         }
     }

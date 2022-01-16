@@ -1,6 +1,7 @@
 .home-reviews-section {
     padding: 175px 0 150px;
     overflow-x: hidden;
+    position: relative;
     @include tablet {
         padding: 95px 0 168px;
     }

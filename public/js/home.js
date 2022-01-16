@@ -10,14 +10,6 @@ $(function() {
     // module popup tabs
     changeTabs('module-tab','module-content-tab');
 
-    // promo countdown
-    $(".countdown-promo").countdown('2022/01/05', function (event) {
-        var totalHours = event.offset.totalDays * 24 + event.offset.hours;
-        $(this).html(event.strftime('<li>' + totalHours + '</li><li>%M</li><li>%S</li>'));
-    }).on('finish.countdown', function (event) {
-        console.log('promo offer finished');
-    });
-
     // reviews slider
     $('.home-reviews-slider').slick({
         infinite: true,
@@ -93,7 +85,7 @@ $(function() {
 
     // faq toggle
     $('.home-faq-item').click(function (){
-        $(this).toggleClass('home-faq-item--active');
+        $(this).toggleClass('home-faq-item--active').find('.home-faq-item__main').slideToggle(300);
     });
 });
 

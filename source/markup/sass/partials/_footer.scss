@@ -66,9 +66,6 @@
 
 .main-footer-menu {
     @include tablet {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-end;
         margin-top: 20px;
         position: relative;
     }
@@ -84,14 +81,15 @@
         }
     }
 
-    &__item {
-        display: block;
-        font-weight: 600;
-        font-size: 12px;
-        line-height: 188%;
-        text-transform: uppercase;
-        color: #FFFFFF;
-        text-align: center;
+    &, & > ul {
+        @include tablet {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+        }
+    }
+
+    &__item, .menu-item {
         margin-bottom: 26px;
         position: relative;
         z-index: 2;
@@ -106,6 +104,19 @@
             @include tablet {
                 margin-bottom: 10px;
                 margin-right: 0;
+            }
+        }
+
+        &, & a {
+            display: block;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 188%;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            text-align: center;
+            &:hover {
+                color: #FF9900;
             }
         }
     }

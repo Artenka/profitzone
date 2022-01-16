@@ -40,10 +40,6 @@
     top: 0;
     right: -75px;
     z-index: 103;
-    @include full-hd {
-        top: -108px;
-        right: -175px;
-    }
     @include tablet-mobile {
         right: 0;
     }

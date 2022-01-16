@@ -558,6 +558,7 @@
         right: -2px;
         opacity: 0;
         transition: 0.4s;
+        cursor: pointer;
         @include tablet-mobile {
             display: none;
         }

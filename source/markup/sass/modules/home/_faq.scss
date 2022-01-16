@@ -91,12 +91,13 @@
         border-radius: 50%;
         background: url(../../img/new_pages/common/arrow-toggle-11.svg) no-repeat center, #4949B7;
         opacity: 0.26;
+        transition: 0.3s;
     }
 
     &.home-faq-item--active {
 
         .home-faq-item__main {
-            display: block;
+            //display: block;
         }
 
         .home-faq-item__arrow {
