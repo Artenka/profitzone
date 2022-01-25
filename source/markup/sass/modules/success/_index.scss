@@ -27,6 +27,7 @@
 
 .success {
     padding: 80px 0 105px;
+    overflow: hidden;
     @include laptop {
         padding: 44px 0;
     }
@@ -121,6 +122,8 @@
             flex: 1;
             max-width: 573px;
             margin-right: 20px;
+            position: relative;
+            z-index: 2;
             @include tablet-mobile {
                 flex: initial;
                 max-width: 100%;
@@ -277,17 +280,17 @@
 }
 
 .success-video-dummy {
-    height: 644px;
+    //height: 644px;
     position: relative;
-    @include laptop {
-        height: 432px;
-    }
-    @include tablet {
-        height: 384px;
-    }
-    @include mobile {
-        height: 240px;
-    }
+    //@include laptop {
+    //    height: 432px;
+    //}
+    //@include tablet {
+    //    height: 384px;
+    //}
+    //@include mobile {
+    //    height: 240px;
+    //}
 
     &__img {
         max-width: 827px;
@@ -295,6 +298,7 @@
         position: absolute;
         top: 0;
         right: -60px;
+        transform: translate(0, -50%);
         @include laptop {
             max-width: 554px;
             right: 0;

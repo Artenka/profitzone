@@ -42,6 +42,7 @@
             padding: 79px 10px 64px;
         }
         @include mobile {
+            background-image: url(../../img/new_pages/home/system/bg-left-mobile.svg);
             padding: 53px 10px 32px;
         }
     }

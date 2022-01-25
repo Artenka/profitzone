@@ -121,7 +121,9 @@
         }
     }
     &:last-child {
-        margin-right: 0;
+        @include desktop-only {
+            margin-right: 0;
+        }
         &:after {
             display: none;
         }

@@ -10,7 +10,7 @@ $(function () {
     });
 
     //popup link
-    $("body").click(function () {
+    $(".popup-layout").click(function () {
         hidePopup();
     });
     $(".popup, .popup-link").click(function (e) {
@@ -22,21 +22,21 @@ $(function () {
     });
 
     //phone flags
-    $("input[type=tel]").intlTelInput({
-        utilsScript       : 'js/utils.js',
-        defaultCountry    : 'auto',
-        separateDialCode  : false,
-        nationalMode      : false,
-        initialCountry    : 'auto',
-        geoIpLookup       : function (callback) {
-            $.get("https://ipinfo.io", function () {
-            }, "jsonp").always(function (resp) {
-                var countryCode = (resp && resp.country) ? resp.country : "";
-                callback(countryCode);
-            });
-        },
-        preferredCountries: ['ua', 'ru', 'by', 'kz']
-    });
+    // $("input[type=tel]").intlTelInput({
+    //     utilsScript       : 'js/utils.js',
+    //     defaultCountry    : 'auto',
+    //     separateDialCode  : false,
+    //     nationalMode      : false,
+    //     initialCountry    : 'auto',
+    //     geoIpLookup       : function (callback) {
+    //         $.get("https://ipinfo.io", function () {
+    //         }, "jsonp").always(function (resp) {
+    //             var countryCode = (resp && resp.country) ? resp.country : "";
+    //             callback(countryCode);
+    //         });
+    //     },
+    //     preferredCountries: ['ua', 'ru', 'by', 'kz']
+    // });
 
     // header submenu toggle
     $('.main-header-burger').click(function (e) {
@@ -62,6 +62,7 @@ $(function () {
 });
 
 function showPopup(popupId) {
+    hidePopup();
     $(popupId).fadeIn(400);
 }
 function hidePopup() {

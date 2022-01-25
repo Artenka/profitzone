@@ -393,6 +393,7 @@
     }
 
     &__text {
+        flex: 1;
         @include tablet {
             font-size: 14px;
         }

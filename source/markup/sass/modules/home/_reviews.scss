@@ -156,17 +156,31 @@
 .home-reviews-slide {
     width: 250px;
     padding: 0 25px;
+    position: relative;
     @include mobile {
         width: 100%;
         padding: 0;
         opacity: 0;
     }
+    &:before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 5;
+    }
 
     &.slick-current {
         width: 350px;
+        z-index: 6;
         @include mobile {
             width: 100%;
             opacity: 1;
+        }
+        &:before {
+            display: none;
         }
 
         .home-reviews-slide-content {

@@ -13,7 +13,7 @@ $(function() {
     // reviews slider
     $('.home-reviews-slider').slick({
         infinite: true,
-        slidesToShow: 3,
+        slidesToShow: 5,
         slidesToScroll: 1,
         dots: false,
         centerMode: true,
@@ -21,6 +21,8 @@ $(function() {
         focusOnSelect: true,
         adaptiveHeight: true,
         centerPadding: 0,
+        autoplay: true,
+        autoplaySpeed: 3000,
         asNavFor: '.popup-slider-reviews',
         responsive: [
             {
@@ -32,6 +34,15 @@ $(function() {
             }
         ]
     });
+
+    // $('body').on('click', '.home-reviews-slide', function(){
+    //     if ($(this).hasClass('slick-current')) {
+    //         showPopup('#popup-reviews');
+    //         setTimeout(function() {
+    //             $('.popup-slider-reviews').slick('setPosition');
+    //         }, 1000);
+    //     }
+    // });
 
     // popup reviews slider
     $('.popup-slider-reviews').slick({
@@ -52,6 +63,7 @@ $(function() {
         dots: true,
         slidesToShow: 1,
         slidesToScroll: 1,
+        adaptiveHeight: true,
         asNavFor: '.home-students-slider-nav',
         customPaging : function(slider, i) {
             return String(i + 1).padStart(2, '0');
@@ -71,7 +83,7 @@ $(function() {
         asNavFor: '.home-students-slider-nav',
     });
 
-    // popup reviews slider
+    // popup students slider
     $('.popup-slider-students').slick({
         infinite: true,
         slidesToShow: 1,
@@ -82,6 +94,15 @@ $(function() {
         adaptiveHeight: true,
         asNavFor: '.home-students-slider-nav'
     });
+
+    // $('body').on('click', '.home-students-video-slide', function(){
+    //     if ($(this).hasClass('slick-current')) {
+    //         showPopup('#popup-students');
+    //         setTimeout(function() {
+    //             $('.popup-slider-students').slick('setPosition');
+    //         }, 1000);
+    //     }
+    // });
 
     // faq toggle
     $('.home-faq-item').click(function (){

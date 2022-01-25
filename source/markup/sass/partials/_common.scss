@@ -261,6 +261,31 @@
     }
 }
 
+.ul-1 {
+    list-style: none;
+    font-size: 14px;
+    line-height: 141%;
+    padding-left: 26px;
+    margin-bottom: 20px;
+    position: relative;
+    @include mobile {
+        padding-left: 16px;
+    }
+    &:before {
+        content: '';
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: #FF9900;
+        position: absolute;
+        top: 6px;
+        left: 0;
+    }
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
 .medium {
     font-weight: 500;
 }
@@ -315,6 +340,8 @@
     align-items: flex-end;
     cursor: pointer;
     position: relative;
+    top: auto;
+    right: auto;
     &:hover, &.burger--active {
 
         .burger-line {
