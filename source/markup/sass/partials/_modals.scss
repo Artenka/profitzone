@@ -1,0 +1,15 @@
+.modal-bottom {
+    width: 100vw;
+    padding: 20px;
+    background: #9595EF;
+    border-top: 1px solid #2E2362;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    @include mobile {
+        padding: 20px 0;
+    }
+}
+
+@import "modals/modal-vpn";

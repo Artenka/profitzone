@@ -1,0 +1,43 @@
+.modal-vpn {
+  .main-wrapper {
+    max-width: 900px;
+  }
+}
+
+.modal-vpn-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  &__avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 40px;
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &__text {
+    flex: 1;
+    @include mobile {
+      max-width: 420px;
+      font-size: 12px;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: underline;
+    }
+  }
+
+  &__btn {
+    margin-left: 40px;
+    @include mobile {
+      width: auto;
+      margin-left: 20px;
+    }
+  }
+}

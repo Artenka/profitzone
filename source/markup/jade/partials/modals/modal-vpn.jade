@@ -1,0 +1,18 @@
+.modal-bottom.modal-vpn
+    .main-wrapper
+        .modal-vpn-block
+            img(src="img/new_pages/success/author.png").modal-vpn-block__avatar
+            p.color-white.modal-vpn-block__text
+                | Не можешь зайти на сайт или войти в кабинет студента, 
+                br.br-lg-md
+                | установи ВПН и поменяй страну, например <a href="https://www.tunnelbear.com/" target="_blank" rel="nofollow">этот</a>
+                br
+                | Скоро все заработает 😉
+            button(type="button").btn.modal-vpn-block__btn Ок 
+
+script.
+    $(function () {
+        $('.modal-vpn-block__btn').click(function () {
+            $('.modal-vpn').slideToggle(300);
+        });
+    });
